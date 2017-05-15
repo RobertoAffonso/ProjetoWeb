@@ -105,9 +105,22 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // app_index_show
-        if (0 === strpos($pathinfo, '/index') && preg_match('#^/index/(?P<pagename>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_index_show')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::showAction',));
+        if (0 === strpos($pathinfo, '/index')) {
+            // app_index_novochamado
+            if ($pathinfo === '/index/novoChamado') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::novoChamadoAction',  '_route' => 'app_index_novochamado',);
+            }
+
+            // app_index_mostrarchamado
+            if ($pathinfo === '/index') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mostrarChamadoAction',  '_route' => 'app_index_mostrarchamado',);
+            }
+
+            // app_index_show
+            if (preg_match('#^/index/(?P<pagename>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_index_show')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::showAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

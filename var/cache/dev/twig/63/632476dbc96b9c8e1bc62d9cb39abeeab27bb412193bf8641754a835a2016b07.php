@@ -19,11 +19,11 @@ class __TwigTemplate_7fbc5e7f6ecb03f56b66ee40aa559312b674c0b9bdddca61160afca1763
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c49d9b5c22feb1f0318bd3a43d85da584dee1f6465c4e084cef1625ff2321fbc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c49d9b5c22feb1f0318bd3a43d85da584dee1f6465c4e084cef1625ff2321fbc->enter($__internal_c49d9b5c22feb1f0318bd3a43d85da584dee1f6465c4e084cef1625ff2321fbc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "mainTheme.html.twig"));
+        $__internal_56944a53e830b31c3b57edfdca5b8a94987998d0a739f772d5e1a6fac69f784f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_56944a53e830b31c3b57edfdca5b8a94987998d0a739f772d5e1a6fac69f784f->enter($__internal_56944a53e830b31c3b57edfdca5b8a94987998d0a739f772d5e1a6fac69f784f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "mainTheme.html.twig"));
 
-        $__internal_0da736efedb6dfeacd1251c509d766abb723c665601d6ef53a3dd96224d46260 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0da736efedb6dfeacd1251c509d766abb723c665601d6ef53a3dd96224d46260->enter($__internal_0da736efedb6dfeacd1251c509d766abb723c665601d6ef53a3dd96224d46260_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "mainTheme.html.twig"));
+        $__internal_a977a0673110057e7459c37e9bbd70e00255dd4f5c22ec5e49896a13edd531c5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a977a0673110057e7459c37e9bbd70e00255dd4f5c22ec5e49896a13edd531c5->enter($__internal_a977a0673110057e7459c37e9bbd70e00255dd4f5c22ec5e49896a13edd531c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "mainTheme.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -45,7 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     ";
         // line 14
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 37
+        // line 35
         echo "
 </head>
 <body class=\"hold-transition skin-blue sidebar-mini\">
@@ -74,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class=\"user-panel\">
             <div class=\"pull-left image\">
                 <img src=\"";
-        // line 64
+        // line 62
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/profilepicture.jpg"), "html", null, true);
         echo "\" class=\"img-circle\" alt=\"User Image\">
             </div>
@@ -91,21 +91,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Optionally, you can add icons to the links -->
             <li class=\"treeview active\">
                 <a href=\"mailbox.html\">
-                    <i class=\"fa fa-envelope\"></i> <span>Chamados</span>
+                    <i class=\"fa fa-envelope\"></i> <span>Chamado</span>
                     <span class=\"pull-right-container\">
                 <i class=\"fa fa-angle-left pull-right\"></i>
               </span>
                 </a>
                 <ul class=\"treeview-menu\">
                     <li class=\"active\">
-                        <a href=\"mailbox.html\">Meus Chamados
+                        <a href=\"mailbox.html\">Meus Chamado
                             <span class=\"pull-right-container\">
                     <span class=\"label label-primary pull-right\"></span>
                   </span>
                         </a>
                     </li>
-                    <li><a href=\"compose.html\">Criar Chamados</a></li>
-                    <li><a href=\"read-mail.html\">Visualizar Chamados</a></li>
+                    <li><a href=\"compose.html\">Criar Chamado</a></li>
+                    <li><a href=\"read-mail.html\">Visualizar Chamado</a></li>
                 </ul>
             </li>
             <li class=\"treeview\">
@@ -144,9 +144,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <section class=\"content\">
 
         ";
-        // line 131
+        // line 129
         $this->displayBlock('body', $context, $blocks);
-        // line 132
+        // line 130
         echo "        <!-- Your Page Content Here -->
     </section>
     <!-- /.content -->
@@ -242,9 +242,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </div>
 <!-- ./wrapper -->
 ";
-        // line 226
+        // line 224
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 237
+        // line 235
         echo "<!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. Slimscroll is required when using the
@@ -253,39 +253,39 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </html>
 ";
         
-        $__internal_c49d9b5c22feb1f0318bd3a43d85da584dee1f6465c4e084cef1625ff2321fbc->leave($__internal_c49d9b5c22feb1f0318bd3a43d85da584dee1f6465c4e084cef1625ff2321fbc_prof);
+        $__internal_56944a53e830b31c3b57edfdca5b8a94987998d0a739f772d5e1a6fac69f784f->leave($__internal_56944a53e830b31c3b57edfdca5b8a94987998d0a739f772d5e1a6fac69f784f_prof);
 
         
-        $__internal_0da736efedb6dfeacd1251c509d766abb723c665601d6ef53a3dd96224d46260->leave($__internal_0da736efedb6dfeacd1251c509d766abb723c665601d6ef53a3dd96224d46260_prof);
+        $__internal_a977a0673110057e7459c37e9bbd70e00255dd4f5c22ec5e49896a13edd531c5->leave($__internal_a977a0673110057e7459c37e9bbd70e00255dd4f5c22ec5e49896a13edd531c5_prof);
 
     }
 
     // line 10
     public function block_title($context, array $blocks = array())
     {
-        $__internal_a2ad72d9ffe11b53a233401ba1b50f313ef37484a861203743bdb3b3a793bfb2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a2ad72d9ffe11b53a233401ba1b50f313ef37484a861203743bdb3b3a793bfb2->enter($__internal_a2ad72d9ffe11b53a233401ba1b50f313ef37484a861203743bdb3b3a793bfb2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a16579a61573b96d649d7f492bb6e6905119da8f26dcc79e69e6c3e69ae61867 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a16579a61573b96d649d7f492bb6e6905119da8f26dcc79e69e6c3e69ae61867->enter($__internal_a16579a61573b96d649d7f492bb6e6905119da8f26dcc79e69e6c3e69ae61867_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_4af3bb2b9a0dad69e35efe6c9e903283d7e98edff834c6816f3c1834b1b56e3b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4af3bb2b9a0dad69e35efe6c9e903283d7e98edff834c6816f3c1834b1b56e3b->enter($__internal_4af3bb2b9a0dad69e35efe6c9e903283d7e98edff834c6816f3c1834b1b56e3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_c8163c672392aafe6729e888dea3361702eddf47003d0ed8e726883920db6c94 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c8163c672392aafe6729e888dea3361702eddf47003d0ed8e726883920db6c94->enter($__internal_c8163c672392aafe6729e888dea3361702eddf47003d0ed8e726883920db6c94_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Hau'Hra";
         
-        $__internal_4af3bb2b9a0dad69e35efe6c9e903283d7e98edff834c6816f3c1834b1b56e3b->leave($__internal_4af3bb2b9a0dad69e35efe6c9e903283d7e98edff834c6816f3c1834b1b56e3b_prof);
+        $__internal_c8163c672392aafe6729e888dea3361702eddf47003d0ed8e726883920db6c94->leave($__internal_c8163c672392aafe6729e888dea3361702eddf47003d0ed8e726883920db6c94_prof);
 
         
-        $__internal_a2ad72d9ffe11b53a233401ba1b50f313ef37484a861203743bdb3b3a793bfb2->leave($__internal_a2ad72d9ffe11b53a233401ba1b50f313ef37484a861203743bdb3b3a793bfb2_prof);
+        $__internal_a16579a61573b96d649d7f492bb6e6905119da8f26dcc79e69e6c3e69ae61867->leave($__internal_a16579a61573b96d649d7f492bb6e6905119da8f26dcc79e69e6c3e69ae61867_prof);
 
     }
 
     // line 14
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_87a11ae6edfa65af2983a131e24a189c8d39057f239a48b1b17cf2874bfa43d1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_87a11ae6edfa65af2983a131e24a189c8d39057f239a48b1b17cf2874bfa43d1->enter($__internal_87a11ae6edfa65af2983a131e24a189c8d39057f239a48b1b17cf2874bfa43d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_86e421c5a4f76cf5f248f06c8573827a3d34625b5e58ae5faab26b21972c522c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_86e421c5a4f76cf5f248f06c8573827a3d34625b5e58ae5faab26b21972c522c->enter($__internal_86e421c5a4f76cf5f248f06c8573827a3d34625b5e58ae5faab26b21972c522c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_dfea84bcce7010561f8c9e704d8236475f0a02af87c2d76b79cfd50a5556ad58 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dfea84bcce7010561f8c9e704d8236475f0a02af87c2d76b79cfd50a5556ad58->enter($__internal_dfea84bcce7010561f8c9e704d8236475f0a02af87c2d76b79cfd50a5556ad58_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_e0f3edd306be979d7915ac9d06a3ef7ff6bde83223a02eeda054bf413dca6aea = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e0f3edd306be979d7915ac9d06a3ef7ff6bde83223a02eeda054bf413dca6aea->enter($__internal_e0f3edd306be979d7915ac9d06a3ef7ff6bde83223a02eeda054bf413dca6aea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 15
         echo "        <!-- Bootstrap 3.3.6 -->
@@ -303,18 +303,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"), "html", null, true);
         echo "\">
+
         <!-- Theme style -->
-        <link rel=\"stylesheet\" href=\"";
-        // line 22
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/fullcalendar/fullcalendar.min.css\""), "html", null, true);
-        echo "\">
         <link rel=\"stylesheet\" href=\"";
         // line 23
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/fullcalendar/fullcalendar.print.css"), "html", null, true);
-        echo "\" media=\"print\">
-        <!-- Theme style -->
-        <link rel=\"stylesheet\" href=\"";
-        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/AdminLTE.min.css"), "html", null, true);
         echo "\">
         <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -322,80 +314,80 @@ scratch. This page gets rid of all links and provides the needed markup only.
               apply the skin class to the body tag so the changes take effect.
         -->
         <link rel=\"stylesheet\" href=\"";
-        // line 30
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/skins/skin-blue.min.css"), "html", null, true);
         echo "\">
 
         <!-- bootstrap wysihtml5 - text editor -->
         <link rel=\"stylesheet\" href=\"";
-        // line 33
+        // line 31
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"), "html", null, true);
         echo "\">
 
         <link rel=\"stylesheet\" href=\"";
-        // line 35
+        // line 33
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/iCheck/flat/blue.css"), "html", null, true);
         echo "\">
     ";
         
-        $__internal_dfea84bcce7010561f8c9e704d8236475f0a02af87c2d76b79cfd50a5556ad58->leave($__internal_dfea84bcce7010561f8c9e704d8236475f0a02af87c2d76b79cfd50a5556ad58_prof);
+        $__internal_e0f3edd306be979d7915ac9d06a3ef7ff6bde83223a02eeda054bf413dca6aea->leave($__internal_e0f3edd306be979d7915ac9d06a3ef7ff6bde83223a02eeda054bf413dca6aea_prof);
 
         
-        $__internal_87a11ae6edfa65af2983a131e24a189c8d39057f239a48b1b17cf2874bfa43d1->leave($__internal_87a11ae6edfa65af2983a131e24a189c8d39057f239a48b1b17cf2874bfa43d1_prof);
+        $__internal_86e421c5a4f76cf5f248f06c8573827a3d34625b5e58ae5faab26b21972c522c->leave($__internal_86e421c5a4f76cf5f248f06c8573827a3d34625b5e58ae5faab26b21972c522c_prof);
 
     }
 
-    // line 131
+    // line 129
     public function block_body($context, array $blocks = array())
     {
-        $__internal_b23beb234540f83f6ffd75912247252e84d6bb60ee46ac6b8d4e16fdbf280e41 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b23beb234540f83f6ffd75912247252e84d6bb60ee46ac6b8d4e16fdbf280e41->enter($__internal_b23beb234540f83f6ffd75912247252e84d6bb60ee46ac6b8d4e16fdbf280e41_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_fbfdae01014304d034e66e6ea086d652b8aaa16be066626549d51ff27510d456 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fbfdae01014304d034e66e6ea086d652b8aaa16be066626549d51ff27510d456->enter($__internal_fbfdae01014304d034e66e6ea086d652b8aaa16be066626549d51ff27510d456_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_d6c9478d629d18ee00220043aa7682727d4aa75a5167618f25cf667324948387 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d6c9478d629d18ee00220043aa7682727d4aa75a5167618f25cf667324948387->enter($__internal_d6c9478d629d18ee00220043aa7682727d4aa75a5167618f25cf667324948387_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_d6c9478d629d18ee00220043aa7682727d4aa75a5167618f25cf667324948387->leave($__internal_d6c9478d629d18ee00220043aa7682727d4aa75a5167618f25cf667324948387_prof);
+        $__internal_232e918ef4076be401a4365b902211b92bb8ef1913976bd9907db46001ea4ca7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_232e918ef4076be401a4365b902211b92bb8ef1913976bd9907db46001ea4ca7->enter($__internal_232e918ef4076be401a4365b902211b92bb8ef1913976bd9907db46001ea4ca7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_b23beb234540f83f6ffd75912247252e84d6bb60ee46ac6b8d4e16fdbf280e41->leave($__internal_b23beb234540f83f6ffd75912247252e84d6bb60ee46ac6b8d4e16fdbf280e41_prof);
+        $__internal_232e918ef4076be401a4365b902211b92bb8ef1913976bd9907db46001ea4ca7->leave($__internal_232e918ef4076be401a4365b902211b92bb8ef1913976bd9907db46001ea4ca7_prof);
+
+        
+        $__internal_fbfdae01014304d034e66e6ea086d652b8aaa16be066626549d51ff27510d456->leave($__internal_fbfdae01014304d034e66e6ea086d652b8aaa16be066626549d51ff27510d456_prof);
 
     }
 
-    // line 226
+    // line 224
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_1d22f44c92723e7c299d220df43a92520c44ce29b5bb81f94bb6d9fa5ed7fedd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1d22f44c92723e7c299d220df43a92520c44ce29b5bb81f94bb6d9fa5ed7fedd->enter($__internal_1d22f44c92723e7c299d220df43a92520c44ce29b5bb81f94bb6d9fa5ed7fedd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_486068453b1dba021a95d05b86d4a30eee2ad643633b646130fd09df1cbb85be = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_486068453b1dba021a95d05b86d4a30eee2ad643633b646130fd09df1cbb85be->enter($__internal_486068453b1dba021a95d05b86d4a30eee2ad643633b646130fd09df1cbb85be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_b744455f64975bee3c5b70bc18c7b7d15959c31e521a07c825a90c37afaa7edc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b744455f64975bee3c5b70bc18c7b7d15959c31e521a07c825a90c37afaa7edc->enter($__internal_b744455f64975bee3c5b70bc18c7b7d15959c31e521a07c825a90c37afaa7edc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_47ebed0b8695cc5b06ec7f149d3ccec1eb1fc673099a0698c54c2660de2a1d41 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_47ebed0b8695cc5b06ec7f149d3ccec1eb1fc673099a0698c54c2660de2a1d41->enter($__internal_47ebed0b8695cc5b06ec7f149d3ccec1eb1fc673099a0698c54c2660de2a1d41_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 227
+        // line 225
         echo "    <!-- REQUIRED JS SCRIPTS -->
 
     <!-- jQuery 2.2.3 -->
     <script src=\"";
-        // line 230
+        // line 228
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/jQuery/jquery-2.2.3.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Bootstrap 3.3.6 -->
     <script src=\"";
-        // line 232
+        // line 230
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <!-- AdminLTE App -->
     <script src=\"";
-        // line 234
+        // line 232
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/app.js"), "html", null, true);
         echo "\"></script>
 
 ";
         
-        $__internal_b744455f64975bee3c5b70bc18c7b7d15959c31e521a07c825a90c37afaa7edc->leave($__internal_b744455f64975bee3c5b70bc18c7b7d15959c31e521a07c825a90c37afaa7edc_prof);
+        $__internal_47ebed0b8695cc5b06ec7f149d3ccec1eb1fc673099a0698c54c2660de2a1d41->leave($__internal_47ebed0b8695cc5b06ec7f149d3ccec1eb1fc673099a0698c54c2660de2a1d41_prof);
 
         
-        $__internal_1d22f44c92723e7c299d220df43a92520c44ce29b5bb81f94bb6d9fa5ed7fedd->leave($__internal_1d22f44c92723e7c299d220df43a92520c44ce29b5bb81f94bb6d9fa5ed7fedd_prof);
+        $__internal_486068453b1dba021a95d05b86d4a30eee2ad643633b646130fd09df1cbb85be->leave($__internal_486068453b1dba021a95d05b86d4a30eee2ad643633b646130fd09df1cbb85be_prof);
 
     }
 
@@ -411,7 +403,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     public function getDebugInfo()
     {
-        return array (  390 => 234,  385 => 232,  380 => 230,  375 => 227,  366 => 226,  349 => 131,  337 => 35,  332 => 33,  326 => 30,  318 => 25,  313 => 23,  309 => 22,  304 => 20,  299 => 18,  294 => 16,  291 => 15,  282 => 14,  264 => 10,  248 => 237,  246 => 226,  150 => 132,  148 => 131,  78 => 64,  49 => 37,  47 => 14,  40 => 10,  29 => 1,);
+        return array (  382 => 232,  377 => 230,  372 => 228,  367 => 225,  358 => 224,  341 => 129,  329 => 33,  324 => 31,  318 => 28,  310 => 23,  304 => 20,  299 => 18,  294 => 16,  291 => 15,  282 => 14,  264 => 10,  248 => 235,  246 => 224,  150 => 130,  148 => 129,  78 => 62,  49 => 35,  47 => 14,  40 => 10,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -444,9 +436,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <link rel=\"stylesheet\" href=\"{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css') }}\">
         <!-- Ionicons -->
         <link rel=\"stylesheet\" href=\"{{ asset('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css') }}\">
-        <!-- Theme style -->
-        <link rel=\"stylesheet\" href=\"{{ asset('plugins/fullcalendar/fullcalendar.min.css\"') }}\">
-        <link rel=\"stylesheet\" href=\"{{ asset('plugins/fullcalendar/fullcalendar.print.css') }}\" media=\"print\">
+
         <!-- Theme style -->
         <link rel=\"stylesheet\" href=\"{{ asset('css/AdminLTE.min.css') }}\">
         <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -502,21 +492,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Optionally, you can add icons to the links -->
             <li class=\"treeview active\">
                 <a href=\"mailbox.html\">
-                    <i class=\"fa fa-envelope\"></i> <span>Chamados</span>
+                    <i class=\"fa fa-envelope\"></i> <span>Chamado</span>
                     <span class=\"pull-right-container\">
                 <i class=\"fa fa-angle-left pull-right\"></i>
               </span>
                 </a>
                 <ul class=\"treeview-menu\">
                     <li class=\"active\">
-                        <a href=\"mailbox.html\">Meus Chamados
+                        <a href=\"mailbox.html\">Meus Chamado
                             <span class=\"pull-right-container\">
                     <span class=\"label label-primary pull-right\"></span>
                   </span>
                         </a>
                     </li>
-                    <li><a href=\"compose.html\">Criar Chamados</a></li>
-                    <li><a href=\"read-mail.html\">Visualizar Chamados</a></li>
+                    <li><a href=\"compose.html\">Criar Chamado</a></li>
+                    <li><a href=\"read-mail.html\">Visualizar Chamado</a></li>
                 </ul>
             </li>
             <li class=\"treeview\">

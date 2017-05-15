@@ -85,11 +85,11 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
-    <parameter key="database_host">127.0.0.1</parameter>
+    <parameter key="database_host">localhost</parameter>
     <parameter key="database_port">null</parameter>
-    <parameter key="database_name">symfony</parameter>
+    <parameter key="database_name">ProjetoWeb</parameter>
     <parameter key="database_user">root</parameter>
-    <parameter key="database_password">null</parameter>
+    <parameter key="database_password" type="string">null</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -156,6 +156,7 @@
     <parameter key="monolog.use_microseconds">true</parameter>
     <parameter key="monolog.swift_mailer.handlers" type="collection"/>
     <parameter key="monolog.handlers_to_channels" type="collection">
+      <parameter key="monolog.handler.chromephp">null</parameter>
       <parameter key="monolog.handler.console" type="collection">
         <parameter key="type">exclusive</parameter>
         <parameter key="elements" type="collection">
@@ -455,7 +456,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>kR7aEjlLuA</argument>
                 <argument>0</argument>
-                <argument>K2jcV0QRhyNpOHkDpTSVIe</argument>
+                <argument>823AWe2bd-HPCf4qB8sK5t</argument>
                 <argument>/home/roberto/ProjetoWeb/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -638,7 +639,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>jWrQ9nb2ab</argument>
       <argument>0</argument>
-      <argument>K2jcV0QRhyNpOHkDpTSVIe</argument>
+      <argument>823AWe2bd-HPCf4qB8sK5t</argument>
       <argument>/home/roberto/ProjetoWeb/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -648,7 +649,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>5iTXfJTjm6</argument>
       <argument>0</argument>
-      <argument>K2jcV0QRhyNpOHkDpTSVIe</argument>
+      <argument>823AWe2bd-HPCf4qB8sK5t</argument>
       <argument>/home/roberto/ProjetoWeb/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1380,6 +1381,14 @@
         </argument>
         <argument>0</argument>
       </call>
+      <call method="addListenerService">
+        <argument>kernel.response</argument>
+        <argument type="collection">
+          <argument>monolog.handler.chromephp</argument>
+          <argument>onKernelResponse</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
       <call method="addSubscriberService">
         <argument>response_listener</argument>
         <argument>Symfony\Component\HttpKernel\EventListener\ResponseListener</argument>
@@ -1641,7 +1650,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5918f2b4906d20.00963152</argument>
+            <argument>5919e41aa72399.20019735</argument>
           </service>
         </argument>
       </argument>
@@ -1789,7 +1798,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>5918f2b4906d20.00963152</argument>
+            <argument>5919e41aa72399.20019735</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2127,6 +2136,14 @@
         <argument type="service" id="monolog.processor.psr_log_message"/>
       </call>
     </service>
+    <service id="monolog.handler.chromephp" class="Symfony\Bridge\Monolog\Handler\ChromePhpHandler">
+      <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse"/>
+      <argument>200</argument>
+      <argument>true</argument>
+      <call method="pushProcessor">
+        <argument type="service" id="monolog.processor.psr_log_message"/>
+      </call>
+    </service>
     <service id="swiftmailer.email_sender.listener" class="Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener">
       <tag name="kernel.event_subscriber"/>
       <argument type="service" id="service_container"/>
@@ -2157,11 +2174,11 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">127.0.0.1</argument>
+        <argument key="host">localhost</argument>
         <argument key="port">null</argument>
-        <argument key="dbname">symfony</argument>
+        <argument key="dbname">ProjetoWeb</argument>
         <argument key="user">root</argument>
-        <argument key="password">null</argument>
+        <argument key="password" type="string">null</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
         <argument key="defaultTableOptions" type="collection"/>
@@ -2248,7 +2265,9 @@
       <argument type="service">
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
-            <argument type="collection"/>
+            <argument type="collection">
+              <argument key="AppBundle">AppBundle\Entity</argument>
+            </argument>
           </call>
           <call method="setMetadataCacheImpl">
             <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
@@ -2261,7 +2280,19 @@
           </call>
           <call method="setMetadataDriverImpl">
             <argument type="service">
-              <service class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false"/>
+              <service class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/home/roberto/ProjetoWeb/src/AppBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>AppBundle\Entity</argument>
+                </call>
+              </service>
             </argument>
           </call>
           <call method="setProxyDir">
@@ -2487,6 +2518,9 @@
         <argument type="service" id="debug.log_processor"/>
       </call>
       <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
+      </call>
+      <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
       </call>
       <call method="pushHandler">
@@ -2497,6 +2531,9 @@
       <argument>cache</argument>
       <call method="pushProcessor">
         <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
@@ -2511,6 +2548,9 @@
         <argument type="service" id="debug.log_processor"/>
       </call>
       <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
+      </call>
+      <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
       </call>
       <call method="pushHandler">
@@ -2521,6 +2561,9 @@
       <argument>templating</argument>
       <call method="pushProcessor">
         <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
@@ -2535,6 +2578,9 @@
         <argument type="service" id="debug.log_processor"/>
       </call>
       <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
+      </call>
+      <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
       </call>
       <call method="pushHandler">
@@ -2545,6 +2591,9 @@
       <argument>php</argument>
       <call method="pushProcessor">
         <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
@@ -2559,13 +2608,16 @@
         <argument type="service" id="debug.log_processor"/>
       </call>
       <call method="pushHandler">
-        <argument type="service" id="monolog.handler.null_internal"/>
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
     </service>
     <service id="monolog.logger.router" class="Symfony\Bridge\Monolog\Logger">
       <argument>router</argument>
       <call method="pushProcessor">
         <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
@@ -2580,6 +2632,9 @@
         <argument type="service" id="debug.log_processor"/>
       </call>
       <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
+      </call>
+      <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
       </call>
       <call method="pushHandler">
@@ -2590,6 +2645,9 @@
       <argument>doctrine</argument>
       <call method="pushProcessor">
         <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
@@ -2667,6 +2725,9 @@
       </call>
       <call method="useMicrosecondTimestamps">
         <argument>true</argument>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.chromephp"/>
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>

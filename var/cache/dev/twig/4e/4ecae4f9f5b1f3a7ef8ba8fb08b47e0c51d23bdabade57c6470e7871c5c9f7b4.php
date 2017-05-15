@@ -46,7 +46,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
         $__internal_2e6632e908096c184c2176d615a50422a496a98c6da94bd6970690c350a44f79 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_2e6632e908096c184c2176d615a50422a496a98c6da94bd6970690c350a44f79->enter($__internal_2e6632e908096c184c2176d615a50422a496a98c6da94bd6970690c350a44f79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Meus Chamados";
+        echo "Meus Chamado";
         
         $__internal_2e6632e908096c184c2176d615a50422a496a98c6da94bd6970690c350a44f79->leave($__internal_2e6632e908096c184c2176d615a50422a496a98c6da94bd6970690c350a44f79_prof);
 
@@ -70,7 +70,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
         <section class=\"content-header\">
             <h1>
                 Bem Vindo!
-                <small>Sistema de Chamados</small>
+                <small>Sistema de Chamado</small>
             </h1>
             <ol class=\"breadcrumb\">
                 <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Level</a></li>
@@ -84,7 +84,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
             <!-- TABLE: LATEST ORDERS -->
             <div class=\"box box-info\">
                 <div class=\"box-header with-border\">
-                    <h3 class=\"box-title\">Meus Chamados</h3>
+                    <h3 class=\"box-title\">Meus Chamado</h3>
 
                     <div class=\"box-tools pull-right\">
                         <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i>
@@ -113,7 +113,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                             <tr>
                                 <td>OR9842</a></td>
                                 <td>Chamado 1</td>
-                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Verificação de Atestado Médico</bold</td>
+                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Verificação de Atestado Médico</bold</td>
                                 <td>02-04-2017</td>
                                 <td>Primeira Etapa</td>
                                 <td><span class=\"label label-success\">Concluido</span></td>
@@ -124,7 +124,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                             <tr>
                                 <td>OR1848</a></td>
                                 <td>Chamado 2</td>
-                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Curto circuito</bold></td>
+                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Curto circuito</bold></td>
                                 <td>01-05-2017</td>
                                 <td>Primeira Etapa</td>
                                 <td><span class=\"label label-warning\">Pendente</span></td>
@@ -135,7 +135,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                             <tr>
                                 <td>OR7429</a></td>
                                 <td>Chamado 3</td>
-                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Reunião Geral</bold</td>
+                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Reunião Geral</bold</td>
                                 <td>10-04-2017</td>
                                 <td>Segunda Etapa</td>
                                 <td><span class=\"label label-danger\">Atrasado</span></td>
@@ -160,7 +160,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                     <div class=\"col-xs-12\">
                         <div class=\"box\">
                             <div class=\"box-header\">
-                                <h3 class=\"box-title\">Chamados Abertos</h3>
+                                <h3 class=\"box-title\">Chamado Abertos</h3>
 
                                 <div class=\"box-tools pull-right\">
                                     <div class=\"input-group input-group-sm\" style=\"width: 150px;\">
@@ -239,8 +239,8 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                                     </tr>
                                 </table>
                                 <div class=\"box-footer clearfix\">
-                                    <a href=\"pages/Chamados/criarChamado.html\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
-                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamados</a>
+                                    <a href=\"pages/Chamado/criarChamado.html\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
+                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamado</a>
                                 </div>
                             </div>
                             <!-- /.box-body -->
@@ -288,7 +288,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
     {
         return new Twig_Source("{% extends 'mainTheme.html.twig' %}
 
-{% block title %}Meus Chamados{% endblock %}
+{% block title %}Meus Chamado{% endblock %}
 
 {% block body %}
     <div class=\"content-wrapper\">
@@ -296,7 +296,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
         <section class=\"content-header\">
             <h1>
                 Bem Vindo!
-                <small>Sistema de Chamados</small>
+                <small>Sistema de Chamado</small>
             </h1>
             <ol class=\"breadcrumb\">
                 <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Level</a></li>
@@ -310,7 +310,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
             <!-- TABLE: LATEST ORDERS -->
             <div class=\"box box-info\">
                 <div class=\"box-header with-border\">
-                    <h3 class=\"box-title\">Meus Chamados</h3>
+                    <h3 class=\"box-title\">Meus Chamado</h3>
 
                     <div class=\"box-tools pull-right\">
                         <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i>
@@ -339,7 +339,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                             <tr>
                                 <td>OR9842</a></td>
                                 <td>Chamado 1</td>
-                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Verificação de Atestado Médico</bold</td>
+                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Verificação de Atestado Médico</bold</td>
                                 <td>02-04-2017</td>
                                 <td>Primeira Etapa</td>
                                 <td><span class=\"label label-success\">Concluido</span></td>
@@ -350,7 +350,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                             <tr>
                                 <td>OR1848</a></td>
                                 <td>Chamado 2</td>
-                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Curto circuito</bold></td>
+                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Curto circuito</bold></td>
                                 <td>01-05-2017</td>
                                 <td>Primeira Etapa</td>
                                 <td><span class=\"label label-warning\">Pendente</span></td>
@@ -361,7 +361,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                             <tr>
                                 <td>OR7429</a></td>
                                 <td>Chamado 3</td>
-                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Reunião Geral</bold</td>
+                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Reunião Geral</bold</td>
                                 <td>10-04-2017</td>
                                 <td>Segunda Etapa</td>
                                 <td><span class=\"label label-danger\">Atrasado</span></td>
@@ -386,7 +386,7 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                     <div class=\"col-xs-12\">
                         <div class=\"box\">
                             <div class=\"box-header\">
-                                <h3 class=\"box-title\">Chamados Abertos</h3>
+                                <h3 class=\"box-title\">Chamado Abertos</h3>
 
                                 <div class=\"box-tools pull-right\">
                                     <div class=\"input-group input-group-sm\" style=\"width: 150px;\">
@@ -465,8 +465,8 @@ class __TwigTemplate_98b9ed896ff9bdf311b28657a94141cbbdf3adc6f86fdf1d01cce0f8834
                                     </tr>
                                 </table>
                                 <div class=\"box-footer clearfix\">
-                                    <a href=\"pages/Chamados/criarChamado.html\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
-                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamados</a>
+                                    <a href=\"pages/Chamado/criarChamado.html\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
+                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamado</a>
                                 </div>
                             </div>
                             <!-- /.box-body -->
