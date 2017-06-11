@@ -85,21 +85,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Optionally, you can add icons to the links -->
             <li class=\"treeview active\">
                 <a href=\"mailbox.html\">
-                    <i class=\"fa fa-envelope\"></i> <span>Chamado</span>
+                    <i class=\"fa fa-envelope\"></i> <span>Chamados</span>
                     <span class=\"pull-right-container\">
                 <i class=\"fa fa-angle-left pull-right\"></i>
               </span>
                 </a>
                 <ul class=\"treeview-menu\">
                     <li class=\"active\">
-                        <a href=\"mailbox.html\">Meus Chamado
+                        <a href=\"mailbox.html\">Meus Chamados
                             <span class=\"pull-right-container\">
                     <span class=\"label label-primary pull-right\"></span>
                   </span>
                         </a>
                     </li>
-                    <li><a href=\"compose.html\">Criar Chamado</a></li>
-                    <li><a href=\"read-mail.html\">Visualizar Chamado</a></li>
+                    <li><a href=\"compose.html\">Criar Chamados</a></li>
+                    <li><a href=\"read-mail.html\">Visualizar Chamados</a></li>
                 </ul>
             </li>
             <li class=\"treeview\">

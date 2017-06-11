@@ -1,0 +1,16 @@
+{% extends 'mainTheme.html.twig' %}
+
+{% block title %}Criar Chamado{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Novo Chamado</h1>
+                {{ form_start(NovoChamado) }}
+                    {{ form_widget(NovoChamado) }}
+                {{ form_end(NovoChamado) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

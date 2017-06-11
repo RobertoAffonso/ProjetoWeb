@@ -1,6 +1,6 @@
 <?php
 
-/* projetoWeb/show.html.twig */
+/* projetoWeb/index.html.twig */
 class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a28169bb1 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("mainTheme.html.twig", "projetoWeb/show.html.twig", 1);
+        $this->parent = $this->loadTemplate("mainTheme.html.twig", "projetoWeb/index.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'body' => array($this, 'block_body'),
@@ -40,7 +40,7 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
         <section class=\"content-header\">
             <h1>
                 Bem Vindo!
-                <small>Sistema de Chamado</small>
+                <small>Sistema de Chamados</small>
             </h1>
             <ol class=\"breadcrumb\">
                 <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Level</a></li>
@@ -54,7 +54,7 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
             <!-- TABLE: LATEST ORDERS -->
             <div class=\"box box-info\">
                 <div class=\"box-header with-border\">
-                    <h3 class=\"box-title\">Meus Chamado</h3>
+                    <h3 class=\"box-title\">Meus Chamados</h3>
 
                     <div class=\"box-tools pull-right\">
                         <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i>
@@ -68,7 +68,7 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
                         <table class=\"table no-margin\">
                             <thead>
                             <tr>
-                                <th>Número do Chamado</th>
+                                <th>Número do Chamados</th>
                                 <th>Nome</th>
                                 <th>Descrição</th>
                                 <th>Data de Envio</th>
@@ -82,8 +82,8 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
                             <tbody>
                             <tr>
                                 <td>OR9842</a></td>
-                                <td>Chamado 1</td>
-                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Verificação de Atestado Médico</bold</td>
+                                <td>Chamados 1</td>
+                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Verificação de Atestado Médico</bold</td>
                                 <td>02-04-2017</td>
                                 <td>Primeira Etapa</td>
                                 <td><span class=\"label label-success\">Concluido</span></td>
@@ -93,8 +93,8 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
                             </tr>
                             <tr>
                                 <td>OR1848</a></td>
-                                <td>Chamado 2</td>
-                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Curto circuito</bold></td>
+                                <td>Chamados 2</td>
+                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Curto circuito</bold></td>
                                 <td>01-05-2017</td>
                                 <td>Primeira Etapa</td>
                                 <td><span class=\"label label-warning\">Pendente</span></td>
@@ -104,8 +104,8 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
                             </tr>
                             <tr>
                                 <td>OR7429</a></td>
-                                <td>Chamado 3</td>
-                                <td><a href=\"pages/Chamado/VisualizarChamados.html\"><bold>Reunião Geral</bold</td>
+                                <td>Chamados 3</td>
+                                <td><a href=\"pages/Chamados/VisualizarChamados.html\"><bold>Reunião Geral</bold</td>
                                 <td>10-04-2017</td>
                                 <td>Segunda Etapa</td>
                                 <td><span class=\"label label-danger\">Atrasado</span></td>
@@ -130,7 +130,7 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
                     <div class=\"col-xs-12\">
                         <div class=\"box\">
                             <div class=\"box-header\">
-                                <h3 class=\"box-title\">Chamado Abertos</h3>
+                                <h3 class=\"box-title\">Chamados Abertos</h3>
 
                                 <div class=\"box-tools pull-right\">
                                     <div class=\"input-group input-group-sm\" style=\"width: 150px;\">
@@ -209,8 +209,8 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
                                     </tr>
                                 </table>
                                 <div class=\"box-footer clearfix\">
-                                    <a href=\"pages/Chamado/criarChamado.html\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
-                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamado</a>
+                                    <a href=\"pages/Chamados/criarChamado.html\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamados</a>
+                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamados</a>
                                 </div>
                             </div>
                             <!-- /.box-body -->
@@ -227,7 +227,7 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
 
     public function getTemplateName()
     {
-        return "projetoWeb/show.html.twig";
+        return "projetoWeb/index.html.twig";
     }
 
     public function isTraitable()
@@ -250,6 +250,6 @@ class __TwigTemplate_05f7ead7f0af41d7e46a9872a6d35e89124e153af5c2bb44e0bb2d0a281
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "projetoWeb/show.html.twig", "/home/roberto/ProjetoWeb/app/Resources/views/projetoWeb/show.html.twig");
+        return new Twig_Source("", "projetoWeb/index.html.twig", "/home/roberto/ProjetoWeb/app/Resources/views/projetoWeb/index.html.twig");
     }
 }

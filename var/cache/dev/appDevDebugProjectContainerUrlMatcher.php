@@ -105,22 +105,67 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        if (0 === strpos($pathinfo, '/index')) {
-            // app_index_novochamado
-            if ($pathinfo === '/index/novoChamado') {
-                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::novoChamadoAction',  '_route' => 'app_index_novochamado',);
+        // pagina_principal
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'pagina_principal');
             }
 
-            // app_index_mostrarchamado
-            if ($pathinfo === '/index') {
-                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mostrarChamadoAction',  '_route' => 'app_index_mostrarchamado',);
+            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mostrarChamadoAction',  '_route' => 'pagina_principal',);
+        }
+
+        // gerenciar_contas
+        if ($pathinfo === '/GerenciarContas') {
+            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mostrarUsuariosAction',  '_route' => 'gerenciar_contas',);
+        }
+
+        if (0 === strpos($pathinfo, '/M')) {
+            if (0 === strpos($pathinfo, '/Mudar')) {
+                // mudar_senha
+                if ($pathinfo === '/MudarSenha') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mudarSenhaAction',  '_route' => 'mudar_senha',);
+                }
+
+                // mudar_informacoes
+                if ($pathinfo === '/MudarInformacoes') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mudarInformacoesAction',  '_route' => 'mudar_informacoes',);
+                }
+
             }
 
-            // app_index_show
-            if (preg_match('#^/index/(?P<pagename>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_index_show')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::showAction',));
+            // minha_conta
+            if ($pathinfo === '/MinhaConta') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::minhaContaAction',  '_route' => 'minha_conta',);
             }
 
+        }
+
+        if (0 === strpos($pathinfo, '/Criar')) {
+            // criar_filas
+            if ($pathinfo === '/CriarFilas') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarFilasAction',  '_route' => 'criar_filas',);
+            }
+
+            // criar_etapas
+            if ($pathinfo === '/CriarEtapas') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarEtapasAction',  '_route' => 'criar_etapas',);
+            }
+
+        }
+
+        // meu_chamado
+        if (preg_match('#^/(?P<nomeChamado>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'meu_chamado')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::meuChamadoAction',));
+        }
+
+        // NovoUsuario
+        if ($pathinfo === '/GerenciarContas/NovoUsuario') {
+            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::NovoUsuarioAction',  '_route' => 'NovoUsuario',);
+        }
+
+        // NovoChamado
+        if ($pathinfo === '/CriarChamado') {
+            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarChamadoAction',  '_route' => 'NovoChamado',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
