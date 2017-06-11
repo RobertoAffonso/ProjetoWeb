@@ -1,0 +1,17 @@
+AppBundle\Entity\Chamados:
+  chamados_{1..5}:
+    numero: <numberBetween(0, 999999)>
+    nome: <nomesChamados()>
+    dataCriacao: <date()>
+    emissor: <firstname()> <lastname()>
+    etapa: <etapas()>
+    descricao: <text(100)>
+    dataLimite: <date()>
+
+AppBundle\Entity\Usuarios:
+  usuarios_{1..10}:
+    nome: <firstname()> <lastname()>
+    senha: <password()>
+    email: <email()>
+    cpf: <randomNumber($nbDigits = NULL, $strict = false)>
+    isAdmin: <boolean()>
