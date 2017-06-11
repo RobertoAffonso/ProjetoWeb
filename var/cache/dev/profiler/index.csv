@@ -173,6 +173,7 @@ eec417,127.0.0.1,GET,http://127.0.0.1:8000/CriarChamado,1496642372,b321d8,200
 b321d8,127.0.0.1,GET,http://127.0.0.1:8000/CriarChamado,1496642372,,404
 dff69a,127.0.0.1,GET,http://127.0.0.1:8000/CriarChamado,1496642390,559c12,200
 559c12,127.0.0.1,GET,http://127.0.0.1:8000/CriarChamado,1496642390,,404
+<<<<<<< HEAD
 41b97a,127.0.0.1,GET,http://127.0.0.1:8000/,1497144052,,200
 5cc573,127.0.0.1,GET,http://127.0.0.1:8000/Aprovar%20Ordem%2066,1497144055,,200
 8e8d54,127.0.0.1,GET,http://127.0.0.1:8000/,1497144058,,200
@@ -270,3 +271,5 @@ b9cfc5,127.0.0.1,GET,http://127.0.0.1:8000/GerenciarContas/NovoUsuario,149715566
 3f2da1,127.0.0.1,GET,http://127.0.0.1:8000/GerenciarContas/NovoUsuario,1497155990,7de480,200
 7de480,127.0.0.1,GET,http://127.0.0.1:8000/GerenciarContas/NovoUsuario,1497155990,,500
 042792,127.0.0.1,GET,http://127.0.0.1:8000/GerenciarContas/NovoUsuario,1497156322,,200
+=======
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83

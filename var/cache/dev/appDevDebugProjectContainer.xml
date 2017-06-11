@@ -474,7 +474,11 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>kR7aEjlLuA</argument>
                 <argument>0</argument>
+<<<<<<< HEAD
                 <argument>PO2wIDrYBAT2J4TcqTVjWu</argument>
+=======
+                <argument>LgWiV5KPPxhe05MqoiwRRy</argument>
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
                 <argument>/home/roberto/ProjetoWeb/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -657,7 +661,11 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>jWrQ9nb2ab</argument>
       <argument>0</argument>
+<<<<<<< HEAD
       <argument>PO2wIDrYBAT2J4TcqTVjWu</argument>
+=======
+      <argument>LgWiV5KPPxhe05MqoiwRRy</argument>
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
       <argument>/home/roberto/ProjetoWeb/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -667,7 +675,11 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>5iTXfJTjm6</argument>
       <argument>0</argument>
+<<<<<<< HEAD
       <argument>PO2wIDrYBAT2J4TcqTVjWu</argument>
+=======
+      <argument>LgWiV5KPPxhe05MqoiwRRy</argument>
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
       <argument>/home/roberto/ProjetoWeb/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1668,7 +1680,11 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
+<<<<<<< HEAD
             <argument>593ca4aa875d71.28159049</argument>
+=======
+            <argument>593499c5a0ee82.97538631</argument>
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
           </service>
         </argument>
       </argument>
@@ -1816,7 +1832,11 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
+<<<<<<< HEAD
             <argument>593ca4aa875d71.28159049</argument>
+=======
+            <argument>593499c5a0ee82.97538631</argument>
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>

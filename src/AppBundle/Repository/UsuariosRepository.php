@@ -31,8 +31,13 @@ class UsuariosRepository extends EntityRepository
     public function findAllAdmins()
     {
         return $this->createQueryBuilder('admins')
+<<<<<<< HEAD
             ->andWhere('admins.admin = :admin')
             ->setParameter('admin', true)
+=======
+            ->andWhere('admins.isAdmin = :isAdmin')
+            ->setParameter('isAdmin', true)
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
             ->getQuery()
             ->execute();
     }

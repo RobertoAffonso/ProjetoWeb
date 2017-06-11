@@ -22,6 +22,7 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_06ac65aeb51ddaac4993aa811da8f16d9f2d8c854f22b10aff41aa6438c2f6c9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
         $__internal_06ac65aeb51ddaac4993aa811da8f16d9f2d8c854f22b10aff41aa6438c2f6c9->enter($__internal_06ac65aeb51ddaac4993aa811da8f16d9f2d8c854f22b10aff41aa6438c2f6c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
 
@@ -34,12 +35,27 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
 
         
         $__internal_c0f008c09f0a77b38dfb72b97f6ef7702d36286f5902932846663a294a638ef5->leave($__internal_c0f008c09f0a77b38dfb72b97f6ef7702d36286f5902932846663a294a638ef5_prof);
+=======
+        $__internal_6b16e67d0140696d23039801d16bd6fba2fe5983cfeec3b47af5026a3b7ca366 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6b16e67d0140696d23039801d16bd6fba2fe5983cfeec3b47af5026a3b7ca366->enter($__internal_6b16e67d0140696d23039801d16bd6fba2fe5983cfeec3b47af5026a3b7ca366_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
+
+        $__internal_ea29496af65af2e5359e72b10d459dbb5aba340f5d5e34e27281569b2f34d79e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ea29496af65af2e5359e72b10d459dbb5aba340f5d5e34e27281569b2f34d79e->enter($__internal_ea29496af65af2e5359e72b10d459dbb5aba340f5d5e34e27281569b2f34d79e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
+
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_6b16e67d0140696d23039801d16bd6fba2fe5983cfeec3b47af5026a3b7ca366->leave($__internal_6b16e67d0140696d23039801d16bd6fba2fe5983cfeec3b47af5026a3b7ca366_prof);
+
+        
+        $__internal_ea29496af65af2e5359e72b10d459dbb5aba340f5d5e34e27281569b2f34d79e->leave($__internal_ea29496af65af2e5359e72b10d459dbb5aba340f5d5e34e27281569b2f34d79e_prof);
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_ce1babcb7d51360ff3723b3f9ad8d88e9e7d2be5a323d2e344240edc6d636974 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
         $__internal_ce1babcb7d51360ff3723b3f9ad8d88e9e7d2be5a323d2e344240edc6d636974->enter($__internal_ce1babcb7d51360ff3723b3f9ad8d88e9e7d2be5a323d2e344240edc6d636974_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
@@ -52,17 +68,39 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
 
         
         $__internal_ce1babcb7d51360ff3723b3f9ad8d88e9e7d2be5a323d2e344240edc6d636974->leave($__internal_ce1babcb7d51360ff3723b3f9ad8d88e9e7d2be5a323d2e344240edc6d636974_prof);
+=======
+        $__internal_c3e699aa2e70871d49bb58817cfbf9c19b6a2842cc025119eb4c902d6e314f29 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c3e699aa2e70871d49bb58817cfbf9c19b6a2842cc025119eb4c902d6e314f29->enter($__internal_c3e699aa2e70871d49bb58817cfbf9c19b6a2842cc025119eb4c902d6e314f29_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_77c61d9cf76ed4710ea04df835760a72defceb2f950c33fa786d2176b87ce712 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_77c61d9cf76ed4710ea04df835760a72defceb2f950c33fa786d2176b87ce712->enter($__internal_77c61d9cf76ed4710ea04df835760a72defceb2f950c33fa786d2176b87ce712_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Gerenciar Usuários";
+        
+        $__internal_77c61d9cf76ed4710ea04df835760a72defceb2f950c33fa786d2176b87ce712->leave($__internal_77c61d9cf76ed4710ea04df835760a72defceb2f950c33fa786d2176b87ce712_prof);
+
+        
+        $__internal_c3e699aa2e70871d49bb58817cfbf9c19b6a2842cc025119eb4c902d6e314f29->leave($__internal_c3e699aa2e70871d49bb58817cfbf9c19b6a2842cc025119eb4c902d6e314f29_prof);
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
+<<<<<<< HEAD
         $__internal_7a770f5918536c7d4d819e83a6b6ddccc61a06dbb54e58703c83ef82ccecbb26 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
         $__internal_7a770f5918536c7d4d819e83a6b6ddccc61a06dbb54e58703c83ef82ccecbb26->enter($__internal_7a770f5918536c7d4d819e83a6b6ddccc61a06dbb54e58703c83ef82ccecbb26_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         $__internal_b47b948cf51686c484dacdeb6652c6a059b23d01aa1f375ad05ded49770ebb2d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_b47b948cf51686c484dacdeb6652c6a059b23d01aa1f375ad05ded49770ebb2d->enter($__internal_b47b948cf51686c484dacdeb6652c6a059b23d01aa1f375ad05ded49770ebb2d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+=======
+        $__internal_c442768f67c54d8d9dad1738aacd4d856c79ab50ca551a8a8e391a7146d4e411 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c442768f67c54d8d9dad1738aacd4d856c79ab50ca551a8a8e391a7146d4e411->enter($__internal_c442768f67c54d8d9dad1738aacd4d856c79ab50ca551a8a8e391a7146d4e411_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_0d2ce8f47e3f98704aa34fa3da734065d24a3c83778b62377c49f5a0a92d2a86 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0d2ce8f47e3f98704aa34fa3da734065d24a3c83778b62377c49f5a0a92d2a86->enter($__internal_0d2ce8f47e3f98704aa34fa3da734065d24a3c83778b62377c49f5a0a92d2a86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
         // line 6
         echo "    <div class=\"content-wrapper\">
@@ -134,7 +172,11 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
             echo "</td>
                                             <td>";
             // line 56
+<<<<<<< HEAD
             echo twig_escape_filter($this->env, $this->getAttribute($context["usuario"], "admin", array()), "html", null, true);
+=======
+            echo twig_escape_filter($this->env, $this->getAttribute($context["usuario"], "isAdmin", array()), "html", null, true);
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
             echo "</td>
                                             <td><input type=\"submit\" name=\"adicionar\" value=\"Deletar\"></td>
                                         </tr>
@@ -163,10 +205,17 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
     <!-- /.col -->
 ";
         
+<<<<<<< HEAD
         $__internal_b47b948cf51686c484dacdeb6652c6a059b23d01aa1f375ad05ded49770ebb2d->leave($__internal_b47b948cf51686c484dacdeb6652c6a059b23d01aa1f375ad05ded49770ebb2d_prof);
 
         
         $__internal_7a770f5918536c7d4d819e83a6b6ddccc61a06dbb54e58703c83ef82ccecbb26->leave($__internal_7a770f5918536c7d4d819e83a6b6ddccc61a06dbb54e58703c83ef82ccecbb26_prof);
+=======
+        $__internal_0d2ce8f47e3f98704aa34fa3da734065d24a3c83778b62377c49f5a0a92d2a86->leave($__internal_0d2ce8f47e3f98704aa34fa3da734065d24a3c83778b62377c49f5a0a92d2a86_prof);
+
+        
+        $__internal_c442768f67c54d8d9dad1738aacd4d856c79ab50ca551a8a8e391a7146d4e411->leave($__internal_c442768f67c54d8d9dad1738aacd4d856c79ab50ca551a8a8e391a7146d4e411_prof);
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
     }
 
@@ -250,7 +299,11 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
                                             <td>{{ usuario.email }}</td>
                                             <td>{{ usuario.cpf }}</td>
                                             <td>{{ usuario.senha }}</td>
+<<<<<<< HEAD
                                             <td>{{ usuario.admin }}</td>
+=======
+                                            <td>{{ usuario.isAdmin }}</td>
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
                                             <td><input type=\"submit\" name=\"adicionar\" value=\"Deletar\"></td>
                                         </tr>
                                         {% endfor %}

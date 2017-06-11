@@ -151,11 +151,14 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarEtapasAction',  '_route' => 'criar_etapas',);
             }
 
+<<<<<<< HEAD
             // CriarChamado
             if ($pathinfo === '/CriarChamado') {
                 return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarChamadoAction',  '_route' => 'CriarChamado',);
             }
 
+=======
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
         }
 
         // meu_chamado
@@ -166,6 +169,14 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // NovoUsuario
         if ($pathinfo === '/GerenciarContas/NovoUsuario') {
             return array (  '_controller' => 'AppBundle\\Controller\\IndexController::NovoUsuarioAction',  '_route' => 'NovoUsuario',);
+<<<<<<< HEAD
+=======
+        }
+
+        // NovoChamado
+        if ($pathinfo === '/CriarChamado') {
+            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarChamadoAction',  '_route' => 'NovoChamado',);
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

@@ -70,6 +70,7 @@ class IndexController extends Controller
         return $this->render("projetoWeb/minhaConta.html.twig");
     }
 
+<<<<<<< HEAD
     /**
      * @Route("/CriarFilas", name="criar_filas")
      */
@@ -140,6 +141,63 @@ class IndexController extends Controller
         return $this->render("projetoWeb/novoUsuario.html.twig", ["NovoUsuario" => $form-> createView()]);
     }
 
+=======
+    /**
+     * @Route("/CriarFilas", name="criar_filas")
+     */
+    public function criarFilasAction()
+    {
+        return $this->render("projetoWeb/criarFilas.html.twig");
+    }
+
+    /**
+     * @Route("/CriarEtapas", name="criar_etapas")
+     */
+    public function criarEtapasAction()
+    {
+        return $this->render("projetoWeb/criarEtapas.html.twig");
+    }
+
+
+    /**
+     * @Route("/{nomeChamado}", name="meu_chamado")
+     */
+    public function meuChamadoAction($nomeChamado)
+    {
+        $em = $this -> getDoctrine() -> getManager();
+        $chamado = $em->getRepository("AppBundle:Chamados")
+            ->findOneBy(['nome' => $nomeChamado]);
+
+        if (!$chamado)
+        {
+            throw $this->createNotFoundException("<html><body><h1><strong>Fuck You</strong></h1></body></html>");
+        }
+
+        $markdownParser = new MarkdownTransformer();
+        $desc = $markdownParser->parse($chamado->getDescricao());
+
+        return $this->render("projetoWeb/meuChamado.html.twig", ['chamado' => $chamado]);
+    }
+
+    /**
+     * @Route("/GerenciarContas/NovoUsuario", name="NovoUsuario")
+     */
+    public function NovoUsuarioAction()
+    {
+        $form = $this->createForm(novoUsuarioForm::class);
+        return $this->render("projetoWeb/novoUsuario.html.twig", ["NovoUsuario" => $form-> createView()]);
+    }
+
+    /**
+     * @Route("/CriarChamado", name="NovoChamado")
+     */
+    public function criarChamadoAction()
+    {
+        $form = $this->createForm(novoChamadoForm::class);
+
+        return $this->render("projetoWeb/criarChamados.html.twig", ["NovoChamado" => $form->createView()]);
+    }
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
     /*
      *

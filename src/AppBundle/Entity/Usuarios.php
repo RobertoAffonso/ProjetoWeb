@@ -23,31 +23,50 @@ class Usuarios
      * @ORM\Column(type="integer")
      */
     private $id;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
     /**
      * @ORM\Column(type="string")
      */
     private $nome;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
     /**
      * @ORM\Column(type="string")
      */
     private $senha;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
     /**
      * @ORM\Column(type="string")
      */
     private $email;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
     /**
      * @ORM\Column(type="string")
      */
     private $cpf;
+<<<<<<< HEAD
 
     /**
      * @ORM\Column(type="boolean")
      */
     private $admin = true;
+=======
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isAdmin;
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
     /**
      * @return mixed
@@ -132,17 +151,31 @@ class Usuarios
     /**
      * @return mixed
      */
+<<<<<<< HEAD
     public function getAdmin()
     {
         return $this->admin;
+=======
+    public function getisAdmin()
+    {
+        return $this->isAdmin;
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
     }
 
 
     /**
+<<<<<<< HEAD
      * @param mixed $admin
      */
     public function setAdmin($admin)
     {
         $this->admin = $admin;
+=======
+     * @param mixed $isAdmin
+     */
+    public function setIsAdmin($isAdmin)
+    {
+        $this->isAdmin = $isAdmin;
+>>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
     }
 }
