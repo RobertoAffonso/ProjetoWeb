@@ -2,18 +2,59 @@
 
 {% block title %}Criar Chamado{% endblock %}
 
-<<<<<<< HEAD
-=======
-{% block body %}
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1>Novo Chamado</h1>
-                {{ form_start(NovoChamado) }}
-                    {{ form_widget(NovoChamado) }}
-                {{ form_end(NovoChamado) }}
-            </div>
-        </div>
-    </div>
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
 {% endblock %}
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>jQuery(document).ready(function ()
+        {
+           $('.js-datepicker').datepicker();
+        });
+    </script>
+
+{% endblock %}
+
+
+{% block body %}
+    <!-- Content Wrapper. Contains page content -->
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>Criar Novo Chamado</h1>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"></h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            {{ form_start(NovoChamado) }}
+                                {{ form_widget(NovoChamado) }}
+                                <p>
+                                <p>
+                                <button type="submit" class="btn btn-default" formnovalidate>Criar Chamado</button>
+                                <a href={{ path('pagina_principal') }} class="btn btn-sm btn-info btn-flat pull-left">Voltar</a>
+                            {{ form_end(NovoChamado) }}
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </section>
+{% endblock %}

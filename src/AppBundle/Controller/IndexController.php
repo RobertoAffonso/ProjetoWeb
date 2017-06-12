@@ -11,6 +11,8 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\Chamados;
 use AppBundle\Entity\meusChamados;
+use AppBundle\Entity\Usuarios;
+use AppBundle\Form\novoChamadoForm;
 use AppBundle\Form\novoUsuarioForm;
 use AppBundle\Service\MarkdownTransformer;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -70,7 +72,6 @@ class IndexController extends Controller
         return $this->render("projetoWeb/minhaConta.html.twig");
     }
 
-<<<<<<< HEAD
     /**
      * @Route("/CriarFilas", name="criar_filas")
      */
@@ -88,11 +89,26 @@ class IndexController extends Controller
     }
 
     /**
-     * @Route("/CriarChamado", name="CriarChamado")
+     * @Route ("/NovoChamado", name="NovoChamado")
      */
-    public function criarChamadoAction()
+    public function NovoChamadoAction(Request $request)
     {
-        return $this->render("projetoWeb/criarChamados.html.twig");
+        $form = $this->createForm(novoChamadoForm::class);
+
+        $form->handleRequest($request);
+            if($form->isValid() && $form->isSubmitted())
+            {
+                $chamado = $form->getData();
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($chamado);
+                $em->flush();
+
+                $this->addFlash('sucesso', "Chamado criado com sucesso!");
+
+                return $this->redirectToRoute("pagina_principal");
+            }
+        return $this->render("projetoWeb/criarChamados.html.twig", array("NovoChamado" => $form->createView()));
     }
 
     /**
@@ -106,7 +122,7 @@ class IndexController extends Controller
 
         if (!$chamado)
         {
-            throw $this->createNotFoundException("<html><body><h1><strong>Fuck You</strong></h1></body></html>");
+            throw $this->createNotFoundException("Error 404");
         }
 
         $markdownParser = new MarkdownTransformer();
@@ -114,8 +130,6 @@ class IndexController extends Controller
 
         return $this->render("projetoWeb/meuChamado.html.twig", ['chamado' => $chamado]);
     }
-
-
 
     /**
      * @Route("/GerenciarContas/NovoUsuario", name="NovoUsuario")
@@ -141,63 +155,29 @@ class IndexController extends Controller
         return $this->render("projetoWeb/novoUsuario.html.twig", ["NovoUsuario" => $form-> createView()]);
     }
 
-=======
     /**
-     * @Route("/CriarFilas", name="criar_filas")
+     * @Route("/GerenciarContas/{id}/Editar", name="EditarUsuario")
      */
-    public function criarFilasAction()
+    public function EditarUsuarioAction(Request $request, Usuarios $usuario)
     {
-        return $this->render("projetoWeb/criarFilas.html.twig");
-    }
+        $form = $this->createForm(novoUsuarioForm::class, $usuario);
 
-    /**
-     * @Route("/CriarEtapas", name="criar_etapas")
-     */
-    public function criarEtapasAction()
-    {
-        return $this->render("projetoWeb/criarEtapas.html.twig");
-    }
-
-
-    /**
-     * @Route("/{nomeChamado}", name="meu_chamado")
-     */
-    public function meuChamadoAction($nomeChamado)
-    {
-        $em = $this -> getDoctrine() -> getManager();
-        $chamado = $em->getRepository("AppBundle:Chamados")
-            ->findOneBy(['nome' => $nomeChamado]);
-
-        if (!$chamado)
+        $form->handleRequest($request);
+        if($form->isValid() && $form->isSubmitted())
         {
-            throw $this->createNotFoundException("<html><body><h1><strong>Fuck You</strong></h1></body></html>");
+            $usuario = $form->getData();
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($usuario);
+            $em->flush();
+
+            $this->addFlash('sucesso', 'Usuário Editado com Sucesso!');
+
+            return $this->redirectToRoute("gerenciar_contas");
         }
 
-        $markdownParser = new MarkdownTransformer();
-        $desc = $markdownParser->parse($chamado->getDescricao());
-
-        return $this->render("projetoWeb/meuChamado.html.twig", ['chamado' => $chamado]);
+        return $this->render("projetoWeb/editarUsuario.html.twig", ["NovoUsuario" => $form-> createView()]);
     }
-
-    /**
-     * @Route("/GerenciarContas/NovoUsuario", name="NovoUsuario")
-     */
-    public function NovoUsuarioAction()
-    {
-        $form = $this->createForm(novoUsuarioForm::class);
-        return $this->render("projetoWeb/novoUsuario.html.twig", ["NovoUsuario" => $form-> createView()]);
-    }
-
-    /**
-     * @Route("/CriarChamado", name="NovoChamado")
-     */
-    public function criarChamadoAction()
-    {
-        $form = $this->createForm(novoChamadoForm::class);
-
-        return $this->render("projetoWeb/criarChamados.html.twig", ["NovoChamado" => $form->createView()]);
-    }
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
 
     /*
      *

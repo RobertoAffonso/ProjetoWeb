@@ -45,6 +45,7 @@
                                         <th>Email</th>
                                         <th>CPF</th>
                                         <th>Senha</th>
+                                        <th>Data de Nascimento</th>
                                         <th>Admin</th>
                                     </tr>
                                         {% for usuario in usuarios %}
@@ -53,12 +54,10 @@
                                             <td>{{ usuario.email }}</td>
                                             <td>{{ usuario.cpf }}</td>
                                             <td>{{ usuario.senha }}</td>
-<<<<<<< HEAD
+                                            <td>{{ usuario.dataNascimento }}</td>
                                             <td>{{ usuario.admin }}</td>
-=======
-                                            <td>{{ usuario.isAdmin }}</td>
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
                                             <td><input type="submit" name="adicionar" value="Deletar"></td>
+                                            <td><a href="{{ path('EditarUsuario', {'id': usuario.id}) }}" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a></td>
                                         </tr>
                                         {% endfor %}
                                 </table>

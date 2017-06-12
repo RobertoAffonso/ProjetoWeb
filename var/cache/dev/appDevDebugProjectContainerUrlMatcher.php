@@ -151,14 +151,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarEtapasAction',  '_route' => 'criar_etapas',);
             }
 
-<<<<<<< HEAD
-            // CriarChamado
-            if ($pathinfo === '/CriarChamado') {
-                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarChamadoAction',  '_route' => 'CriarChamado',);
-            }
+        }
 
-=======
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+        // NovoChamado
+        if ($pathinfo === '/NovoChamado') {
+            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::NovoChamadoAction',  '_route' => 'NovoChamado',);
         }
 
         // meu_chamado
@@ -166,17 +163,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'meu_chamado')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::meuChamadoAction',));
         }
 
-        // NovoUsuario
-        if ($pathinfo === '/GerenciarContas/NovoUsuario') {
-            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::NovoUsuarioAction',  '_route' => 'NovoUsuario',);
-<<<<<<< HEAD
-=======
-        }
+        if (0 === strpos($pathinfo, '/GerenciarContas')) {
+            // NovoUsuario
+            if ($pathinfo === '/GerenciarContas/NovoUsuario') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::NovoUsuarioAction',  '_route' => 'NovoUsuario',);
+            }
 
-        // NovoChamado
-        if ($pathinfo === '/CriarChamado') {
-            return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarChamadoAction',  '_route' => 'NovoChamado',);
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+            // EditarUsuario
+            if (preg_match('#^/GerenciarContas/(?P<id>[^/]++)/Editar$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'EditarUsuario')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::EditarUsuarioAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

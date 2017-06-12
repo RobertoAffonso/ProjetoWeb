@@ -45,12 +45,13 @@ class LoadFixtures implements FixtureInterface
                     'Novo Usuário',
                     'Tornar Admin',
                     'Aprovar Ordem 66',
-                    'Hora de terminar o jogo mental',
+                    "It's time to beat the Mind Game",
+                    'Rip and Tear',
                     'Consertar Ar Condicionado',
                     'Requisição de Equipamento',
                     'Manutenção',
                     'Pedido de Demissão',
-                    'Pandora Directive'
+                    'Pandora Directive',
                 ];
 
         $key = array_rand($nomes);

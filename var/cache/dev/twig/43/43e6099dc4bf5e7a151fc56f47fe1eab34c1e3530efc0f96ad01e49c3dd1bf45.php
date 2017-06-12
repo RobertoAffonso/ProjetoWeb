@@ -11,6 +11,8 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
         $this->parent = $this->loadTemplate("mainTheme.html.twig", "projetoWeb/novoUsuario.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
+            'stylesheets' => array($this, 'block_stylesheets'),
+            'javascripts' => array($this, 'block_javascripts'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -22,101 +24,112 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-<<<<<<< HEAD
-        $__internal_2e6f0608549a199a3af318ff3027273d20b45e13a5d33947ecfa728369bb90cf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2e6f0608549a199a3af318ff3027273d20b45e13a5d33947ecfa728369bb90cf->enter($__internal_2e6f0608549a199a3af318ff3027273d20b45e13a5d33947ecfa728369bb90cf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
+        $__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c->enter($__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
 
-        $__internal_88e27d080f8d2f2e480df64d44e40184c1895d29e14ce3cdbe6a5bec0dcd104c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_88e27d080f8d2f2e480df64d44e40184c1895d29e14ce3cdbe6a5bec0dcd104c->enter($__internal_88e27d080f8d2f2e480df64d44e40184c1895d29e14ce3cdbe6a5bec0dcd104c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
-
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-        
-        $__internal_2e6f0608549a199a3af318ff3027273d20b45e13a5d33947ecfa728369bb90cf->leave($__internal_2e6f0608549a199a3af318ff3027273d20b45e13a5d33947ecfa728369bb90cf_prof);
-
-        
-        $__internal_88e27d080f8d2f2e480df64d44e40184c1895d29e14ce3cdbe6a5bec0dcd104c->leave($__internal_88e27d080f8d2f2e480df64d44e40184c1895d29e14ce3cdbe6a5bec0dcd104c_prof);
-=======
-        $__internal_a54dd5a2916e4859f7340386d564deb37c1fc3fcf35103e2758aa2bc081d4d5b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a54dd5a2916e4859f7340386d564deb37c1fc3fcf35103e2758aa2bc081d4d5b->enter($__internal_a54dd5a2916e4859f7340386d564deb37c1fc3fcf35103e2758aa2bc081d4d5b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
-
-        $__internal_83e9e59f7db5e1d56a33ede890ef6f201c230adf65204296d829805dc93f23cd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_83e9e59f7db5e1d56a33ede890ef6f201c230adf65204296d829805dc93f23cd->enter($__internal_83e9e59f7db5e1d56a33ede890ef6f201c230adf65204296d829805dc93f23cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
+        $__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22->enter($__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a54dd5a2916e4859f7340386d564deb37c1fc3fcf35103e2758aa2bc081d4d5b->leave($__internal_a54dd5a2916e4859f7340386d564deb37c1fc3fcf35103e2758aa2bc081d4d5b_prof);
+        $__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c->leave($__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c_prof);
 
         
-        $__internal_83e9e59f7db5e1d56a33ede890ef6f201c230adf65204296d829805dc93f23cd->leave($__internal_83e9e59f7db5e1d56a33ede890ef6f201c230adf65204296d829805dc93f23cd_prof);
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+        $__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22->leave($__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-<<<<<<< HEAD
-        $__internal_042e45eeab7fefce3f79b01509268587bb923a1caadf495444221998c3a10398 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_042e45eeab7fefce3f79b01509268587bb923a1caadf495444221998c3a10398->enter($__internal_042e45eeab7fefce3f79b01509268587bb923a1caadf495444221998c3a10398_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87->enter($__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_d89c0021b2438bea192e299f50db1414c62047a7aaac1d5ba2506277be634310 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d89c0021b2438bea192e299f50db1414c62047a7aaac1d5ba2506277be634310->enter($__internal_d89c0021b2438bea192e299f50db1414c62047a7aaac1d5ba2506277be634310_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "Criar Novo Usuario ";
-        
-        $__internal_d89c0021b2438bea192e299f50db1414c62047a7aaac1d5ba2506277be634310->leave($__internal_d89c0021b2438bea192e299f50db1414c62047a7aaac1d5ba2506277be634310_prof);
-
-        
-        $__internal_042e45eeab7fefce3f79b01509268587bb923a1caadf495444221998c3a10398->leave($__internal_042e45eeab7fefce3f79b01509268587bb923a1caadf495444221998c3a10398_prof);
-=======
-        $__internal_585828d32b3c601bb3cf8a9274fbc545f9d8d74a77795dc55db5f9bcb15e8afe = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_585828d32b3c601bb3cf8a9274fbc545f9d8d74a77795dc55db5f9bcb15e8afe->enter($__internal_585828d32b3c601bb3cf8a9274fbc545f9d8d74a77795dc55db5f9bcb15e8afe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        $__internal_dda94623eb293c34f2b75011ff900c52e3030e4dd09945f128f4c77a72fd52ba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dda94623eb293c34f2b75011ff900c52e3030e4dd09945f128f4c77a72fd52ba->enter($__internal_dda94623eb293c34f2b75011ff900c52e3030e4dd09945f128f4c77a72fd52ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e->enter($__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Criar Novo Usuario ";
         
-        $__internal_dda94623eb293c34f2b75011ff900c52e3030e4dd09945f128f4c77a72fd52ba->leave($__internal_dda94623eb293c34f2b75011ff900c52e3030e4dd09945f128f4c77a72fd52ba_prof);
+        $__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e->leave($__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e_prof);
 
         
-        $__internal_585828d32b3c601bb3cf8a9274fbc545f9d8d74a77795dc55db5f9bcb15e8afe->leave($__internal_585828d32b3c601bb3cf8a9274fbc545f9d8d74a77795dc55db5f9bcb15e8afe_prof);
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+        $__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87->leave($__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87_prof);
 
     }
 
     // line 5
-    public function block_body($context, array $blocks = array())
+    public function block_stylesheets($context, array $blocks = array())
     {
-<<<<<<< HEAD
-        $__internal_202676b88012a436d80216f70112a8b70a13cc639bd1d28031b24c9bc061f39b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_202676b88012a436d80216f70112a8b70a13cc639bd1d28031b24c9bc061f39b->enter($__internal_202676b88012a436d80216f70112a8b70a13cc639bd1d28031b24c9bc061f39b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347->enter($__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_1ffecd458d17aa2d7243a34c47fca96dfcd5905080b665f3bdb825d04ee91c82 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1ffecd458d17aa2d7243a34c47fca96dfcd5905080b665f3bdb825d04ee91c82->enter($__internal_1ffecd458d17aa2d7243a34c47fca96dfcd5905080b665f3bdb825d04ee91c82_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44->enter($__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 6
+        echo "    ";
+        $this->displayParentBlock("stylesheets", $context, $blocks);
+        echo "
+
+    <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css\">
+";
+        
+        $__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44->leave($__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44_prof);
+
+        
+        $__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347->leave($__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347_prof);
+
+    }
+
+    // line 11
+    public function block_javascripts($context, array $blocks = array())
+    {
+        $__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1->enter($__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5->enter($__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 12
+        echo "    ";
+        $this->displayParentBlock("javascripts", $context, $blocks);
+        echo "
+
+    <script src=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js\"></script>
+
+    <script>jQuery(document).ready(function ()
+        {
+            \$('.js-datepicker').datepicker({
+                format: 'yyyy-MM-dd',
+                html5 => false,
+            });
+        });
+    </script>
+
+";
+        
+        $__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5->leave($__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5_prof);
+
+        
+        $__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1->leave($__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1_prof);
+
+    }
+
+    // line 27
+    public function block_body($context, array $blocks = array())
+    {
+        $__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b->enter($__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd->enter($__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        // line 28
         echo "    <!-- Content Wrapper. Contains page content -->
 
         <!-- Content Header (Page header) -->
         <section class=\"content-header\">
             <h1>Criar Novo Usuário</h1>
-=======
-        $__internal_7d7945ed00776c91da6c661101c16ac0c2b8f9f7f86c2b7d2e5f45fd268b9608 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7d7945ed00776c91da6c661101c16ac0c2b8f9f7f86c2b7d2e5f45fd268b9608->enter($__internal_7d7945ed00776c91da6c661101c16ac0c2b8f9f7f86c2b7d2e5f45fd268b9608_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        $__internal_acf3ff2d6da3f439f9da4bb156f71ce8295f49119e9fe1cd3bcffcc8f7eac1c5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_acf3ff2d6da3f439f9da4bb156f71ce8295f49119e9fe1cd3bcffcc8f7eac1c5->enter($__internal_acf3ff2d6da3f439f9da4bb156f71ce8295f49119e9fe1cd3bcffcc8f7eac1c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        // line 6
-        echo "    <!-- Content Wrapper. Contains page content -->
-    <div class=\"content-wrapper\">
-        <!-- Content Header (Page header) -->
-        <section class=\"content-header\">
-            <h1>
-                Criar Novo Usuário
-            </h1>
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
             <div class=\"row\">
                 <div class=\"col-lg-12\">
                     <h1 class=\"page-header\"></h1>
@@ -125,24 +138,23 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
             </div>
             <!-- /.row -->
             <div class=\"row\">
-<<<<<<< HEAD
                     <div class=\"panel panel-default\">
                         <div class=\"panel-body\">
                                 <div class=\"row\">
                                     <div class=\"col-lg-6\">
                                             ";
-        // line 23
+        // line 45
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'form_start');
         echo "
                                                 ";
-        // line 24
+        // line 46
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'widget');
         echo "
                                                 <p>
                                                 <p>
-                                                <button type=\"submit\" class=\"btn btn-default\">Criar usuario</button>
+                                                <button type=\"submit\" class=\"btn btn-default\" formnovalidate>Criar usuario</button>
                                             ";
-        // line 28
+        // line 50
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'form_end');
         echo "
                                     </div>
@@ -157,52 +169,10 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
         </section>
 ";
         
-        $__internal_1ffecd458d17aa2d7243a34c47fca96dfcd5905080b665f3bdb825d04ee91c82->leave($__internal_1ffecd458d17aa2d7243a34c47fca96dfcd5905080b665f3bdb825d04ee91c82_prof);
+        $__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd->leave($__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd_prof);
 
         
-        $__internal_202676b88012a436d80216f70112a8b70a13cc639bd1d28031b24c9bc061f39b->leave($__internal_202676b88012a436d80216f70112a8b70a13cc639bd1d28031b24c9bc061f39b_prof);
-=======
-                <div class=\"col-lg-12\">
-                    <div class=\"panel panel-default\">
-                        <div class=\"panel-body\">
-                            <div class=\"row\">
-                                <div class=\"col-lg-6\">
-                                        ";
-        // line 26
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'form_start');
-        echo "
-                                            ";
-        // line 27
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'widget');
-        echo "
-                                            <p>
-                                            <p>
-                                            <button type=\"submit\" class=\"btn btn-default\">Criar usuario</button>
-                                        ";
-        // line 31
-        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'form_end');
-        echo "
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-                            </div>
-                            <!-- /.row (nested) -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            </form>
-        </section>
-    </div>
-";
-        
-        $__internal_acf3ff2d6da3f439f9da4bb156f71ce8295f49119e9fe1cd3bcffcc8f7eac1c5->leave($__internal_acf3ff2d6da3f439f9da4bb156f71ce8295f49119e9fe1cd3bcffcc8f7eac1c5_prof);
-
-        
-        $__internal_7d7945ed00776c91da6c661101c16ac0c2b8f9f7f86c2b7d2e5f45fd268b9608->leave($__internal_7d7945ed00776c91da6c661101c16ac0c2b8f9f7f86c2b7d2e5f45fd268b9608_prof);
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+        $__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b->leave($__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b_prof);
 
     }
 
@@ -218,11 +188,7 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
     public function getDebugInfo()
     {
-<<<<<<< HEAD
-        return array (  98 => 28,  91 => 24,  87 => 23,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
-=======
-        return array (  101 => 31,  94 => 27,  90 => 26,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+        return array (  158 => 50,  151 => 46,  147 => 45,  128 => 28,  119 => 27,  94 => 12,  85 => 11,  70 => 6,  61 => 5,  43 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -239,21 +205,34 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
 {% block title %}Criar Novo Usuario {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css\">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js\"></script>
+
+    <script>jQuery(document).ready(function ()
+        {
+            \$('.js-datepicker').datepicker({
+                format: 'yyyy-MM-dd',
+                html5 => false,
+            });
+        });
+    </script>
+
+{% endblock %}
+
 {% block body %}
     <!-- Content Wrapper. Contains page content -->
-<<<<<<< HEAD
 
         <!-- Content Header (Page header) -->
         <section class=\"content-header\">
             <h1>Criar Novo Usuário</h1>
-=======
-    <div class=\"content-wrapper\">
-        <!-- Content Header (Page header) -->
-        <section class=\"content-header\">
-            <h1>
-                Criar Novo Usuário
-            </h1>
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
             <div class=\"row\">
                 <div class=\"col-lg-12\">
                     <h1 class=\"page-header\"></h1>
@@ -262,7 +241,6 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
             </div>
             <!-- /.row -->
             <div class=\"row\">
-<<<<<<< HEAD
                     <div class=\"panel panel-default\">
                         <div class=\"panel-body\">
                                 <div class=\"row\">
@@ -271,7 +249,7 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
                                                 {{ form_widget(NovoUsuario) }}
                                                 <p>
                                                 <p>
-                                                <button type=\"submit\" class=\"btn btn-default\">Criar usuario</button>
+                                                <button type=\"submit\" class=\"btn btn-default\" formnovalidate>Criar usuario</button>
                                             {{ form_end(NovoUsuario) }}
                                     </div>
                                     <!-- /.col-lg-6 (nested) -->
@@ -287,34 +265,6 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
 
 
-", "projetoWeb/novoUsuario.html.twig", "/home/roberto/ProjetoWeb/app/Resources/views/projetoWeb/novoUsuario.html.twig");
-=======
-                <div class=\"col-lg-12\">
-                    <div class=\"panel panel-default\">
-                        <div class=\"panel-body\">
-                            <div class=\"row\">
-                                <div class=\"col-lg-6\">
-                                        {{ form_start(NovoUsuario) }}
-                                            {{ form_widget(NovoUsuario) }}
-                                            <p>
-                                            <p>
-                                            <button type=\"submit\" class=\"btn btn-default\">Criar usuario</button>
-                                        {{ form_end(NovoUsuario) }}
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-                            </div>
-                            <!-- /.row (nested) -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            </form>
-        </section>
-    </div>
-{% endblock %}", "projetoWeb/novoUsuario.html.twig", "/home/roberto/ProjetoWeb/app/Resources/views/projetoWeb/novoUsuario.html.twig");
->>>>>>> c9e181b4dae49f329a5425276d5b84fb1a356a83
+", "projetoWeb/novoUsuario.html.twig", "/home/uniceub/Desktop/ProjetoWeb/app/Resources/views/projetoWeb/novoUsuario.html.twig");
     }
 }
