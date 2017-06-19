@@ -22,47 +22,47 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bc9a463ed6e8d7bda2b206b0733a5de5f446191a1b0fc5094d8ab3eece402507 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bc9a463ed6e8d7bda2b206b0733a5de5f446191a1b0fc5094d8ab3eece402507->enter($__internal_bc9a463ed6e8d7bda2b206b0733a5de5f446191a1b0fc5094d8ab3eece402507_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
+        $__internal_f4489caa31f95c0806243ffcbe94483cad95540f74b9b85f92e39bcb650934bf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f4489caa31f95c0806243ffcbe94483cad95540f74b9b85f92e39bcb650934bf->enter($__internal_f4489caa31f95c0806243ffcbe94483cad95540f74b9b85f92e39bcb650934bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
 
-        $__internal_13ac2eeddc5a142f4e279e62b9c89f003026d8384fa380798bf460dc9d557d06 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_13ac2eeddc5a142f4e279e62b9c89f003026d8384fa380798bf460dc9d557d06->enter($__internal_13ac2eeddc5a142f4e279e62b9c89f003026d8384fa380798bf460dc9d557d06_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
+        $__internal_150d239aeb53ba61bd009fc378d7c96d75e509280743042c76e404a023a5ed5a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_150d239aeb53ba61bd009fc378d7c96d75e509280743042c76e404a023a5ed5a->enter($__internal_150d239aeb53ba61bd009fc378d7c96d75e509280743042c76e404a023a5ed5a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/gerenciarContas.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_bc9a463ed6e8d7bda2b206b0733a5de5f446191a1b0fc5094d8ab3eece402507->leave($__internal_bc9a463ed6e8d7bda2b206b0733a5de5f446191a1b0fc5094d8ab3eece402507_prof);
+        $__internal_f4489caa31f95c0806243ffcbe94483cad95540f74b9b85f92e39bcb650934bf->leave($__internal_f4489caa31f95c0806243ffcbe94483cad95540f74b9b85f92e39bcb650934bf_prof);
 
         
-        $__internal_13ac2eeddc5a142f4e279e62b9c89f003026d8384fa380798bf460dc9d557d06->leave($__internal_13ac2eeddc5a142f4e279e62b9c89f003026d8384fa380798bf460dc9d557d06_prof);
+        $__internal_150d239aeb53ba61bd009fc378d7c96d75e509280743042c76e404a023a5ed5a->leave($__internal_150d239aeb53ba61bd009fc378d7c96d75e509280743042c76e404a023a5ed5a_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_1de61b301f45c79f26754ed91a793e04b7a5340f1625893f41cccaa4a9a60ec7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1de61b301f45c79f26754ed91a793e04b7a5340f1625893f41cccaa4a9a60ec7->enter($__internal_1de61b301f45c79f26754ed91a793e04b7a5340f1625893f41cccaa4a9a60ec7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_6644573d26b2859fe2402963b0311087c30576cca4f30bc15332f0b686734987 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6644573d26b2859fe2402963b0311087c30576cca4f30bc15332f0b686734987->enter($__internal_6644573d26b2859fe2402963b0311087c30576cca4f30bc15332f0b686734987_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_3342420f212cd19d5690a63acf06b28ef3d2ac361f8675f134f134280eff8589 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3342420f212cd19d5690a63acf06b28ef3d2ac361f8675f134f134280eff8589->enter($__internal_3342420f212cd19d5690a63acf06b28ef3d2ac361f8675f134f134280eff8589_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_e325d27077cc8870f0f32fd0c0b42f861485b317e0da9ab793843a58316d1aca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e325d27077cc8870f0f32fd0c0b42f861485b317e0da9ab793843a58316d1aca->enter($__internal_e325d27077cc8870f0f32fd0c0b42f861485b317e0da9ab793843a58316d1aca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Gerenciar Usuários";
         
-        $__internal_3342420f212cd19d5690a63acf06b28ef3d2ac361f8675f134f134280eff8589->leave($__internal_3342420f212cd19d5690a63acf06b28ef3d2ac361f8675f134f134280eff8589_prof);
+        $__internal_e325d27077cc8870f0f32fd0c0b42f861485b317e0da9ab793843a58316d1aca->leave($__internal_e325d27077cc8870f0f32fd0c0b42f861485b317e0da9ab793843a58316d1aca_prof);
 
         
-        $__internal_1de61b301f45c79f26754ed91a793e04b7a5340f1625893f41cccaa4a9a60ec7->leave($__internal_1de61b301f45c79f26754ed91a793e04b7a5340f1625893f41cccaa4a9a60ec7_prof);
+        $__internal_6644573d26b2859fe2402963b0311087c30576cca4f30bc15332f0b686734987->leave($__internal_6644573d26b2859fe2402963b0311087c30576cca4f30bc15332f0b686734987_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_8e60d31f5a08205294010d049c135e9d1d635f321c3302a471d12a60142c138b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8e60d31f5a08205294010d049c135e9d1d635f321c3302a471d12a60142c138b->enter($__internal_8e60d31f5a08205294010d049c135e9d1d635f321c3302a471d12a60142c138b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_b433234759e43d458fdbe834732155f746431ecd488d0c4fff4f7d9f5b9cb997 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b433234759e43d458fdbe834732155f746431ecd488d0c4fff4f7d9f5b9cb997->enter($__internal_b433234759e43d458fdbe834732155f746431ecd488d0c4fff4f7d9f5b9cb997_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_5d040775461ff0fe0dd5b0372684aae244632f109262b6cfc7781fab9ce716ca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5d040775461ff0fe0dd5b0372684aae244632f109262b6cfc7781fab9ce716ca->enter($__internal_5d040775461ff0fe0dd5b0372684aae244632f109262b6cfc7781fab9ce716ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e2f5809b68e26482f05ac9ccf0a336d27c672c5e37c5c660b8fd993e4ef3f592 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e2f5809b68e26482f05ac9ccf0a336d27c672c5e37c5c660b8fd993e4ef3f592->enter($__internal_e2f5809b68e26482f05ac9ccf0a336d27c672c5e37c5c660b8fd993e4ef3f592_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"content-wrapper\">
@@ -135,15 +135,14 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
             echo "</td>
                                             <td>";
             // line 57
-            echo twig_escape_filter($this->env, $this->getAttribute($context["usuario"], "dataNascimento", array()), "html", null, true);
-            echo "</td>
-                                            <td>";
-            // line 58
             echo twig_escape_filter($this->env, $this->getAttribute($context["usuario"], "admin", array()), "html", null, true);
             echo "</td>
-                                            <td><input type=\"submit\" name=\"adicionar\" value=\"Deletar\"></td>
                                             <td><a href=\"";
-            // line 60
+            // line 58
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("DeletarUsuario", array("id" => $this->getAttribute($context["usuario"], "id", array()))), "html", null, true);
+            echo "\" class=\"btn-app\">Deletar</a></td>
+                                            <td><a href=\"";
+            // line 59
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("EditarUsuario", array("id" => $this->getAttribute($context["usuario"], "id", array()))), "html", null, true);
             echo "\" class=\"btn btn-xs btn-success\"><span class=\"fa fa-pencil\"></span></a></td>
                                         </tr>
@@ -152,11 +151,11 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['usuario'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 63
+        // line 62
         echo "                                </table>
                                 <div class=\"box-footer clearfix\">
                                     <a href=";
-        // line 65
+        // line 64
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("NovoUsuario");
         echo " class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Usuário</a>
                                 </div>
@@ -172,10 +171,10 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
     <!-- /.col -->
 ";
         
-        $__internal_5d040775461ff0fe0dd5b0372684aae244632f109262b6cfc7781fab9ce716ca->leave($__internal_5d040775461ff0fe0dd5b0372684aae244632f109262b6cfc7781fab9ce716ca_prof);
+        $__internal_e2f5809b68e26482f05ac9ccf0a336d27c672c5e37c5c660b8fd993e4ef3f592->leave($__internal_e2f5809b68e26482f05ac9ccf0a336d27c672c5e37c5c660b8fd993e4ef3f592_prof);
 
         
-        $__internal_8e60d31f5a08205294010d049c135e9d1d635f321c3302a471d12a60142c138b->leave($__internal_8e60d31f5a08205294010d049c135e9d1d635f321c3302a471d12a60142c138b_prof);
+        $__internal_b433234759e43d458fdbe834732155f746431ecd488d0c4fff4f7d9f5b9cb997->leave($__internal_b433234759e43d458fdbe834732155f746431ecd488d0c4fff4f7d9f5b9cb997_prof);
 
     }
 
@@ -191,7 +190,7 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
 
     public function getDebugInfo()
     {
-        return array (  160 => 65,  156 => 63,  147 => 60,  142 => 58,  138 => 57,  134 => 56,  130 => 55,  126 => 54,  122 => 53,  119 => 52,  115 => 51,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  159 => 64,  155 => 62,  146 => 59,  142 => 58,  138 => 57,  134 => 56,  130 => 55,  126 => 54,  122 => 53,  119 => 52,  115 => 51,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -260,9 +259,8 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
                                             <td>{{ usuario.email }}</td>
                                             <td>{{ usuario.cpf }}</td>
                                             <td>{{ usuario.senha }}</td>
-                                            <td>{{ usuario.dataNascimento }}</td>
                                             <td>{{ usuario.admin }}</td>
-                                            <td><input type=\"submit\" name=\"adicionar\" value=\"Deletar\"></td>
+                                            <td><a href=\"{{ path('DeletarUsuario', {'id': usuario.id}) }}\" class=\"btn-app\">Deletar</a></td>
                                             <td><a href=\"{{ path('EditarUsuario', {'id': usuario.id}) }}\" class=\"btn btn-xs btn-success\"><span class=\"fa fa-pencil\"></span></a></td>
                                         </tr>
                                         {% endfor %}
@@ -280,6 +278,6 @@ class __TwigTemplate_d91e4ca6e897b2891ef5057b9894b723fa8e5462f3066839c3b8f3c2af9
             <!-- /.box -->
     </div>
     <!-- /.col -->
-{% endblock %}", "projetoWeb/gerenciarContas.html.twig", "/home/uniceub/Desktop/ProjetoWeb/app/Resources/views/projetoWeb/gerenciarContas.html.twig");
+{% endblock %}", "projetoWeb/gerenciarContas.html.twig", "/home/roberto/Documents/ProjetoWeb/app/Resources/views/projetoWeb/gerenciarContas.html.twig");
     }
 }

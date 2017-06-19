@@ -45,37 +45,15 @@ class Usuarios
 
     /**
      * @Assert\NotBlank()
+     * @Assert\Length(min="11", minMessage="O CPF deve conter 11 digitos")
      * @ORM\Column(type="string")
      */
     private $cpf;
 
     /**
-     * @Assert\NotBlank()
      * @ORM\Column(type="boolean")
      */
     private $admin = true;
-
-    /**
-     * @Assert\NotBlank()
-     * @ORM\Column(type="string")
-     */
-    private $dataNascimento;
-
-    /**
-     * @return mixed
-     */
-    public function getDataNascimento()
-    {
-        return $this->dataNascimento;
-    }
-
-    /**
-     * @param mixed $dataNascimento
-     */
-    public function setDataNascimento($dataNascimento)
-    {
-        $this->dataNascimento = $dataNascimento;
-    }
 
     /**
      * @return mixed

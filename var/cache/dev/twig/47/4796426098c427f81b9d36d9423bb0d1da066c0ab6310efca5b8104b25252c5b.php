@@ -22,47 +22,47 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9132280f5072a182e6e2f205391e58295cb0498c00b3f4a805a5789e08fefe4e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9132280f5072a182e6e2f205391e58295cb0498c00b3f4a805a5789e08fefe4e->enter($__internal_9132280f5072a182e6e2f205391e58295cb0498c00b3f4a805a5789e08fefe4e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/index.html.twig"));
+        $__internal_28f42a90eaa858e34378f9ecc84bcc009528de69cd119c914ae9b0d6e0facd14 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_28f42a90eaa858e34378f9ecc84bcc009528de69cd119c914ae9b0d6e0facd14->enter($__internal_28f42a90eaa858e34378f9ecc84bcc009528de69cd119c914ae9b0d6e0facd14_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/index.html.twig"));
 
-        $__internal_f6e5e5d607e6db870a770554a5d64784511a2c05f154aea4643c372fb41d243c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f6e5e5d607e6db870a770554a5d64784511a2c05f154aea4643c372fb41d243c->enter($__internal_f6e5e5d607e6db870a770554a5d64784511a2c05f154aea4643c372fb41d243c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/index.html.twig"));
+        $__internal_3b32a014a1e57a6bc89331ec682a3c7ec424d0b87fc89e7db42b0b07adcf78e3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3b32a014a1e57a6bc89331ec682a3c7ec424d0b87fc89e7db42b0b07adcf78e3->enter($__internal_3b32a014a1e57a6bc89331ec682a3c7ec424d0b87fc89e7db42b0b07adcf78e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_9132280f5072a182e6e2f205391e58295cb0498c00b3f4a805a5789e08fefe4e->leave($__internal_9132280f5072a182e6e2f205391e58295cb0498c00b3f4a805a5789e08fefe4e_prof);
+        $__internal_28f42a90eaa858e34378f9ecc84bcc009528de69cd119c914ae9b0d6e0facd14->leave($__internal_28f42a90eaa858e34378f9ecc84bcc009528de69cd119c914ae9b0d6e0facd14_prof);
 
         
-        $__internal_f6e5e5d607e6db870a770554a5d64784511a2c05f154aea4643c372fb41d243c->leave($__internal_f6e5e5d607e6db870a770554a5d64784511a2c05f154aea4643c372fb41d243c_prof);
+        $__internal_3b32a014a1e57a6bc89331ec682a3c7ec424d0b87fc89e7db42b0b07adcf78e3->leave($__internal_3b32a014a1e57a6bc89331ec682a3c7ec424d0b87fc89e7db42b0b07adcf78e3_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_cedfb85fcc4282a2fdb3d85182becef497457784ff5c9ffdbfb0a7234a5e735c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_cedfb85fcc4282a2fdb3d85182becef497457784ff5c9ffdbfb0a7234a5e735c->enter($__internal_cedfb85fcc4282a2fdb3d85182becef497457784ff5c9ffdbfb0a7234a5e735c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_06f928e89ce138c0ccf32da9ae6f7cffe8089936b6fbedcc5c769d4b298c15bd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_06f928e89ce138c0ccf32da9ae6f7cffe8089936b6fbedcc5c769d4b298c15bd->enter($__internal_06f928e89ce138c0ccf32da9ae6f7cffe8089936b6fbedcc5c769d4b298c15bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_0ab230c93f52b25ae86fb6d45889dde608ba4cbff2a3cb3766c8fa176f781c77 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0ab230c93f52b25ae86fb6d45889dde608ba4cbff2a3cb3766c8fa176f781c77->enter($__internal_0ab230c93f52b25ae86fb6d45889dde608ba4cbff2a3cb3766c8fa176f781c77_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_7d684d096f4702443302bb1d490d28a89983b4a57d893bc853607aa850efd427 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7d684d096f4702443302bb1d490d28a89983b4a57d893bc853607aa850efd427->enter($__internal_7d684d096f4702443302bb1d490d28a89983b4a57d893bc853607aa850efd427_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Meus Chamados";
         
-        $__internal_0ab230c93f52b25ae86fb6d45889dde608ba4cbff2a3cb3766c8fa176f781c77->leave($__internal_0ab230c93f52b25ae86fb6d45889dde608ba4cbff2a3cb3766c8fa176f781c77_prof);
+        $__internal_7d684d096f4702443302bb1d490d28a89983b4a57d893bc853607aa850efd427->leave($__internal_7d684d096f4702443302bb1d490d28a89983b4a57d893bc853607aa850efd427_prof);
 
         
-        $__internal_cedfb85fcc4282a2fdb3d85182becef497457784ff5c9ffdbfb0a7234a5e735c->leave($__internal_cedfb85fcc4282a2fdb3d85182becef497457784ff5c9ffdbfb0a7234a5e735c_prof);
+        $__internal_06f928e89ce138c0ccf32da9ae6f7cffe8089936b6fbedcc5c769d4b298c15bd->leave($__internal_06f928e89ce138c0ccf32da9ae6f7cffe8089936b6fbedcc5c769d4b298c15bd_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_a6211d7299f5c9e767d8b6dabdf0270f560d8c833e9b74333fd86a94a7588a12 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a6211d7299f5c9e767d8b6dabdf0270f560d8c833e9b74333fd86a94a7588a12->enter($__internal_a6211d7299f5c9e767d8b6dabdf0270f560d8c833e9b74333fd86a94a7588a12_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4376c806e1f952287fdf5d3cd5e7e966078be1e5254bbcedf24fcf32e230bab4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4376c806e1f952287fdf5d3cd5e7e966078be1e5254bbcedf24fcf32e230bab4->enter($__internal_4376c806e1f952287fdf5d3cd5e7e966078be1e5254bbcedf24fcf32e230bab4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_ed51163db2d9ba52478b535c1707aee1fa561d22ef02f8df61138a243f1268ad = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ed51163db2d9ba52478b535c1707aee1fa561d22ef02f8df61138a243f1268ad->enter($__internal_ed51163db2d9ba52478b535c1707aee1fa561d22ef02f8df61138a243f1268ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4fe4ea223eacfafed8258f1e9609c97d9579b5e2a8d6cb7476add7378883f6fa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4fe4ea223eacfafed8258f1e9609c97d9579b5e2a8d6cb7476add7378883f6fa->enter($__internal_4fe4ea223eacfafed8258f1e9609c97d9579b5e2a8d6cb7476add7378883f6fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"content-wrapper\">
@@ -98,20 +98,35 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
                         <table class=\"table no-margin\">
                             <thead>
                             <tr>
-                                <th>Número do Chamado</th>
+                                <th>Número</th>
                                 <th>Nome</th>
                                 <th>Descrição</th>
-                                <th>Data de Envio</th>
-                                <th>Etapa</th>
-                                <th>Enviado por:</th>
+                                <th>Setor</th>
+                                <th>Fila</th>
                                 <th>Previsão de Término</th>
                             </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                            ";
+        // line 48
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["meusChamados"] ?? $this->getContext($context, "meusChamados")));
+        foreach ($context['_seq'] as $context["_key"] => $context["mChamados"]) {
+            // line 49
+            echo "                                <tr>
+                                    <td>";
+            // line 50
+            echo twig_escape_filter($this->env, $this->getAttribute($context["mChamados"], "id", array()), "html", null, true);
+            echo "</td>
                                     <td></td>
                                 </tr>
-                            </tbody>
+                           ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mChamados'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 54
+        echo "                            </tbody>
                         </table>
                     </div>
                     <!-- /.table-responsive -->
@@ -147,69 +162,64 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
                                         <th>Número</th>
                                         <th>Nome</th>
                                         <th>Descrição</th>
-                                        <th>Data de Envio</th>
-                                        <th>Etapa</th>
-                                        <th>Enviado por:</th>
+                                        <th>Setor</th>
+                                        <th>Fila</th>
                                         <th>Previsão de Término</th>
                                         <th>Atender</th>
+                                        <th>Devolver</th>
                                     </tr>
                                         ";
-        // line 94
+        // line 96
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["chamados"] ?? $this->getContext($context, "chamados")));
         foreach ($context['_seq'] as $context["_key"] => $context["chamado"]) {
-            // line 95
+            // line 97
             echo "                                         <tr>
                                             <td>";
-            // line 96
-            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "numero", array()), "html", null, true);
-            echo "</td>
-                                             <td>
-                                                 <a href=";
             // line 98
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("meu_chamado", array("nomeChamado" => $this->getAttribute($context["chamado"], "nome", array()))), "html", null, true);
-            echo ">
-                                                 ";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "id", array()), "html", null, true);
+            echo "</td>
+                                             <td>";
             // line 99
             echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "nome", array()), "html", null, true);
-            echo "
-                                                 </a>
-                                             </td>
+            echo "</td>
                                             <td>";
-            // line 102
+            // line 100
             echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "descricao", array()), "html", null, true);
+            echo "</td>
+                                             <td>";
+            // line 101
+            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "setor", array()), "html", null, true);
+            echo "</td>
+                                             <td>";
+            // line 102
+            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "fila", array()), "html", null, true);
             echo "</td>
                                             <td>";
             // line 103
-            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "dataCriacao", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["chamado"], "dataLimite", array()), "m/d/Y"), "html", null, true);
             echo "</td>
-                                            <td>";
+                                             <td><a href=\"";
             // line 104
-            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "etapa", array()), "html", null, true);
-            echo "</td>
-                                            <td>";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("meu_chamado", array("id" => $this->getAttribute($context["chamado"], "id", array()))), "html", null, true);
+            echo "\" class=\"btn btn-sm btn-info btn-flat pull-left\">Atender</a></td>
+                                             <td><a href=\"";
             // line 105
-            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "emissor", array()), "html", null, true);
-            echo "</td>
-                                            <td>";
-            // line 106
-            echo twig_escape_filter($this->env, $this->getAttribute($context["chamado"], "dataLimite", array()), "html", null, true);
-            echo "</td>
-                                            <td><input type=\"submit\" name=\"adicionar\" value=\"atender\"></td>
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("devolver_chamado", array("id" => $this->getAttribute($context["chamado"], "id", array()))), "html", null, true);
+            echo "\" class=\"btn btn-sm btn-info btn-flat pull-left\">Devolver</a></td>
                                          </tr>
                                         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['chamado'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 110
+        // line 108
         echo "                                </table>
                                 <div class=\"box-footer clearfix\">
-                                    <a href=";
-        // line 112
+                                    <a href=\"";
+        // line 110
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("NovoChamado");
-        echo " class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
-                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamados</a>
+        echo "\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
                                 </div>
                             </div>
                             <!-- /.box-body -->
@@ -223,10 +233,10 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
     <!-- /.col -->
 ";
         
-        $__internal_ed51163db2d9ba52478b535c1707aee1fa561d22ef02f8df61138a243f1268ad->leave($__internal_ed51163db2d9ba52478b535c1707aee1fa561d22ef02f8df61138a243f1268ad_prof);
+        $__internal_4fe4ea223eacfafed8258f1e9609c97d9579b5e2a8d6cb7476add7378883f6fa->leave($__internal_4fe4ea223eacfafed8258f1e9609c97d9579b5e2a8d6cb7476add7378883f6fa_prof);
 
         
-        $__internal_a6211d7299f5c9e767d8b6dabdf0270f560d8c833e9b74333fd86a94a7588a12->leave($__internal_a6211d7299f5c9e767d8b6dabdf0270f560d8c833e9b74333fd86a94a7588a12_prof);
+        $__internal_4376c806e1f952287fdf5d3cd5e7e966078be1e5254bbcedf24fcf32e230bab4->leave($__internal_4376c806e1f952287fdf5d3cd5e7e966078be1e5254bbcedf24fcf32e230bab4_prof);
 
     }
 
@@ -242,7 +252,7 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
 
     public function getDebugInfo()
     {
-        return array (  210 => 112,  206 => 110,  196 => 106,  192 => 105,  188 => 104,  184 => 103,  180 => 102,  174 => 99,  170 => 98,  165 => 96,  162 => 95,  158 => 94,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
+        return array (  221 => 110,  217 => 108,  208 => 105,  204 => 104,  200 => 103,  196 => 102,  192 => 101,  188 => 100,  184 => 99,  180 => 98,  177 => 97,  173 => 96,  129 => 54,  119 => 50,  116 => 49,  112 => 48,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -293,19 +303,21 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
                         <table class=\"table no-margin\">
                             <thead>
                             <tr>
-                                <th>Número do Chamado</th>
+                                <th>Número</th>
                                 <th>Nome</th>
                                 <th>Descrição</th>
-                                <th>Data de Envio</th>
-                                <th>Etapa</th>
-                                <th>Enviado por:</th>
+                                <th>Setor</th>
+                                <th>Fila</th>
                                 <th>Previsão de Término</th>
                             </tr>
                             </thead>
                             <tbody>
+                            {% for mChamados in meusChamados %}
                                 <tr>
+                                    <td>{{ mChamados.id }}</td>
                                     <td></td>
                                 </tr>
+                           {% endfor %}
                             </tbody>
                         </table>
                     </div>
@@ -342,32 +354,27 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
                                         <th>Número</th>
                                         <th>Nome</th>
                                         <th>Descrição</th>
-                                        <th>Data de Envio</th>
-                                        <th>Etapa</th>
-                                        <th>Enviado por:</th>
+                                        <th>Setor</th>
+                                        <th>Fila</th>
                                         <th>Previsão de Término</th>
                                         <th>Atender</th>
+                                        <th>Devolver</th>
                                     </tr>
                                         {% for chamado in chamados %}
                                          <tr>
-                                            <td>{{ chamado.numero }}</td>
-                                             <td>
-                                                 <a href={{ path('meu_chamado', {'nomeChamado' : chamado.nome}) }}>
-                                                 {{ chamado.nome }}
-                                                 </a>
-                                             </td>
+                                            <td>{{ chamado.id }}</td>
+                                             <td>{{ chamado.nome }}</td>
                                             <td>{{ chamado.descricao }}</td>
-                                            <td>{{ chamado.dataCriacao }}</td>
-                                            <td>{{ chamado.etapa }}</td>
-                                            <td>{{ chamado.emissor }}</td>
-                                            <td>{{ chamado.dataLimite }}</td>
-                                            <td><input type=\"submit\" name=\"adicionar\" value=\"atender\"></td>
+                                             <td>{{ chamado.setor }}</td>
+                                             <td>{{ chamado.fila }}</td>
+                                            <td>{{ chamado.dataLimite|date(\"m/d/Y\") }}</td>
+                                             <td><a href=\"{{ path('meu_chamado', {'id' : chamado.id}) }}\" class=\"btn btn-sm btn-info btn-flat pull-left\">Atender</a></td>
+                                             <td><a href=\"{{ path('devolver_chamado', {'id' : chamado.id}) }}\" class=\"btn btn-sm btn-info btn-flat pull-left\">Devolver</a></td>
                                          </tr>
                                         {% endfor %}
                                 </table>
                                 <div class=\"box-footer clearfix\">
-                                    <a href={{ path('NovoChamado') }} class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
-                                    <a href=\"javascript:void(0)\" class=\"btn btn-sm btn-default btn-flat pull-right\">Visualizar Todos os Chamados</a>
+                                    <a href=\"{{ path('NovoChamado') }}\" class=\"btn btn-sm btn-info btn-flat pull-left\">Criar novo Chamado</a>
                                 </div>
                             </div>
                             <!-- /.box-body -->
@@ -379,6 +386,6 @@ class __TwigTemplate_7e102e78d16ae54e6a8cc047d75f0d24bf5f58538df3ab83a1f6fca5cbe
             <!-- /.box -->
     </div>
     <!-- /.col -->
-{% endblock %}", "projetoWeb/index.html.twig", "/home/uniceub/Desktop/ProjetoWeb/app/Resources/views/projetoWeb/index.html.twig");
+{% endblock %}", "projetoWeb/index.html.twig", "/home/roberto/Documents/ProjetoWeb/app/Resources/views/projetoWeb/index.html.twig");
     }
 }

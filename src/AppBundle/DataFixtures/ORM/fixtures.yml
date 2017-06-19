@@ -1,9 +1,7 @@
 AppBundle\Entity\Chamados:
   chamados_{1..5}:
-    numero: <numberBetween(0, 999999)>
     nome: <nomesChamados()>
     dataCriacao: <date()>
-    emissor: <firstname()> <lastname()>
     etapa: <etapas()>
     descricao: <text(100)>
     dataLimite: <date()>
@@ -14,5 +12,8 @@ AppBundle\Entity\Usuarios:
     senha: <password()>
     email: <email()>
     cpf: <randomNumber($nbDigits = NULL, $strict = false)>
-    dataNascimento: <date($format = 'Y-m-d', $max = 'now')>
     admin: <boolean()>
+AppBundle\Entity\Setores:
+  setores_{1..11}:
+    name: <setores()>
+

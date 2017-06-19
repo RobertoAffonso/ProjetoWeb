@@ -10,12 +10,13 @@ namespace AppBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="meus_chamados")
  */
-class meusChamados
+class  meusChamados
 {
 
     /**
@@ -24,42 +25,69 @@ class meusChamados
      * @ORM\Column(type="integer")
      */
     private $id;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $nome;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $dataCriacao;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $emissor;
+
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Chamados")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $numero;
+    private $chamados;
+
+    /*
+     *
+     *
+     *
+     *
+     *
+     */
 
     /**
-     * @ORM\Column(type="string")
+     * @return Chamados
      */
-    private $descricao;
+    public function getChamados()
+    {
+        return $this->chamados;
+    }
 
     /**
-     * @ORM\Column(type="string")
+     * @param mixed $chamados
      */
-    private $dataFinal;
+    public function setChamados(Chamados $chamados=null)
+    {
+        $this->chamados = $chamados;
+    }
 
-    /**********************************************************************************
-     *
-     *
-     *
-     *
-     *
-     *
+    /**
+     * @return Setores
      */
+    public function getSetor()
+    {
+        return $this->setor;
+    }
+
+    /**
+     * @param mixed $setor
+     */
+    public function setSetor(Setores $setor=null)
+    {
+        $this->setor = $setor;
+    }
+
+    /**
+     * @return Fila
+     */
+    public function getFila()
+    {
+        return $this->fila;
+    }
+
+    /**
+     * @param mixed $fila
+     */
+    public function setFila(Fila $fila=null)
+    {
+        $this->fila = $fila;
+    }
 
     /**
      * @return mixed
@@ -70,75 +98,19 @@ class meusChamados
     }
 
     /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
      * @return mixed
      */
-    public function getNome()
+    public function getEtapa()
     {
-        return $this->nome;
+        return $this->etapa;
     }
 
     /**
-     * @param mixed $nome
+     * @param mixed $etapa
      */
-    public function setNome($nome)
+    public function setEtapa($etapa)
     {
-        $this->nome = $nome;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDataCriacao()
-    {
-        return $this->dataCriacao;
-    }
-
-    /**
-     * @param mixed $dataCriacao
-     */
-    public function setDataCriacao($dataCriacao)
-    {
-        $this->dataCriacao = $dataCriacao;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getEmissor()
-    {
-        return $this->emissor;
-    }
-
-    /**
-     * @param mixed $emissor
-     */
-    public function setEmissor($emissor)
-    {
-        $this->emissor = $emissor;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNumero()
-    {
-        return $this->numero;
-    }
-
-    /**
-     * @param mixed $numero
-     */
-    public function setNumero($numero)
-    {
-        $this->numero = $numero;
+        $this->etapa = $etapa;
     }
 
     /**
@@ -160,17 +132,55 @@ class meusChamados
     /**
      * @return mixed
      */
-    public function getDataFinal()
+    public function getDataLimite()
     {
-        return $this->dataFinal;
+        return $this->dataLimite;
     }
 
     /**
-     * @param mixed $dataFinal
+     * @param mixed $dataLimite
      */
-    public function setDataFinal($dataFinal)
+    public function setDataLimite($dataLimite)
     {
-        $this->dataFinal = $dataFinal;
+        $this->dataLimite = $dataLimite;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    /**
+     * @param mixed $nome
+     */
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrioridade()
+    {
+        return $this->Prioridade;
+    }
+
+    /**
+     * @param mixed $Prioridade
+     */
+    public function setPrioridade($Prioridade)
+    {
+        $this->Prioridade = $Prioridade;
+    }
+
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return $this->getDataLimite();
     }
 
 

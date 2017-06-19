@@ -36,19 +36,21 @@
                         <table class="table no-margin">
                             <thead>
                             <tr>
-                                <th>Número do Chamado</th>
+                                <th>Número</th>
                                 <th>Nome</th>
                                 <th>Descrição</th>
-                                <th>Data de Envio</th>
-                                <th>Etapa</th>
-                                <th>Enviado por:</th>
+                                <th>Setor</th>
+                                <th>Fila</th>
                                 <th>Previsão de Término</th>
                             </tr>
                             </thead>
                             <tbody>
+                            {% for mChamados in meusChamados %}
                                 <tr>
+                                    <td>{{ mChamados.id }}</td>
                                     <td></td>
                                 </tr>
+                           {% endfor %}
                             </tbody>
                         </table>
                     </div>
@@ -85,32 +87,27 @@
                                         <th>Número</th>
                                         <th>Nome</th>
                                         <th>Descrição</th>
-                                        <th>Data de Envio</th>
-                                        <th>Etapa</th>
-                                        <th>Enviado por:</th>
+                                        <th>Setor</th>
+                                        <th>Fila</th>
                                         <th>Previsão de Término</th>
                                         <th>Atender</th>
+                                        <th>Devolver</th>
                                     </tr>
                                         {% for chamado in chamados %}
                                          <tr>
-                                            <td>{{ chamado.numero }}</td>
-                                             <td>
-                                                 <a href={{ path('meu_chamado', {'nomeChamado' : chamado.nome}) }}>
-                                                 {{ chamado.nome }}
-                                                 </a>
-                                             </td>
+                                            <td>{{ chamado.id }}</td>
+                                             <td>{{ chamado.nome }}</td>
                                             <td>{{ chamado.descricao }}</td>
-                                            <td>{{ chamado.dataCriacao }}</td>
-                                            <td>{{ chamado.etapa }}</td>
-                                            <td>{{ chamado.emissor }}</td>
-                                            <td>{{ chamado.dataLimite }}</td>
-                                            <td><input type="submit" name="adicionar" value="atender"></td>
+                                             <td>{{ chamado.setor }}</td>
+                                             <td>{{ chamado.fila }}</td>
+                                            <td>{{ chamado.dataLimite|date("m/d/Y") }}</td>
+                                             <td><a href="{{ path('meu_chamado', {'id' : chamado.id}) }}" class="btn btn-sm btn-info btn-flat pull-left">Atender</a></td>
+                                             <td><a href="{{ path('devolver_chamado', {'id' : chamado.id}) }}" class="btn btn-sm btn-info btn-flat pull-left">Devolver</a></td>
                                          </tr>
                                         {% endfor %}
                                 </table>
                                 <div class="box-footer clearfix">
-                                    <a href={{ path('NovoChamado') }} class="btn btn-sm btn-info btn-flat pull-left">Criar novo Chamado</a>
-                                    <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">Visualizar Todos os Chamados</a>
+                                    <a href="{{ path('NovoChamado') }}" class="btn btn-sm btn-info btn-flat pull-left">Criar novo Chamado</a>
                                 </div>
                             </div>
                             <!-- /.box-body -->

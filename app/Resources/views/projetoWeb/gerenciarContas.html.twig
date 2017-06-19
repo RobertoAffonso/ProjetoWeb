@@ -54,9 +54,8 @@
                                             <td>{{ usuario.email }}</td>
                                             <td>{{ usuario.cpf }}</td>
                                             <td>{{ usuario.senha }}</td>
-                                            <td>{{ usuario.dataNascimento }}</td>
                                             <td>{{ usuario.admin }}</td>
-                                            <td><input type="submit" name="adicionar" value="Deletar"></td>
+                                            <td><a href="{{ path('DeletarUsuario', {'id': usuario.id}) }}" class="btn-app">Deletar</a></td>
                                             <td><a href="{{ path('EditarUsuario', {'id': usuario.id}) }}" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a></td>
                                         </tr>
                                         {% endfor %}

@@ -9,6 +9,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ChamadosRepository")
@@ -24,6 +25,7 @@ class Chamados
     private $id;
 
     /**
+     *
      * @ORM\Column(type="string")
      */
     private $nome;
@@ -31,22 +33,22 @@ class Chamados
     /**
      * @ORM\Column(type="string")
      */
-    private $dataCriacao;
+    private $Prioridade;
 
     /**
-     * @ORM\Column(type="string")
+     * @Assert\NotBlank()
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Setores")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $emissor;
+    private $setor;
 
     /**
-     * @ORM\Column(type="string")
+     * @Assert\NotBlank()
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Fila")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $numero;
+    private $fila;
 
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $etapa;
 
     /**
      * @ORM\Column(type="text")
@@ -54,10 +56,14 @@ class Chamados
     private $descricao;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="datetime")
      */
     private $dataLimite;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $comentario;
 
     /*
      *
@@ -67,36 +73,61 @@ class Chamados
      *
      */
 
+
+    /**
+     * @return mixed
+     */
+    public function getComentario()
+    {
+        return $this->comentario;
+    }
+
+    /**
+     * @param mixed $comentario
+     */
+    public function setComentario($comentario=null)
+    {
+        $this->comentario = $comentario;
+    }
+
+    /**
+     * @return Setores
+     */
+    public function getSetor()
+    {
+        return $this->setor;
+    }
+
+    /**
+     * @param mixed $setor
+     */
+    public function setSetor(Setores $setor=null)
+    {
+        $this->setor = $setor;
+    }
+
+    /**
+     * @return Fila
+     */
+    public function getFila()
+    {
+        return $this->fila;
+    }
+
+    /**
+     * @param mixed $fila
+     */
+    public function setFila(Fila $fila=null)
+    {
+        $this->fila = $fila;
+    }
+
     /**
      * @return mixed
      */
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNumero()
-    {
-        return $this->numero;
-    }
-
-    /**
-     * @param mixed $numero
-     */
-    public function setNumero($numero)
-    {
-        $this->numero = $numero;
     }
 
     /**
@@ -166,33 +197,24 @@ class Chamados
     /**
      * @return mixed
      */
-    public function getDataCriacao()
+    public function getPrioridade()
     {
-        return $this->dataCriacao;
+        return $this->Prioridade;
     }
 
     /**
-     * @param mixed $dataCriacao
+     * @param mixed $Prioridade
      */
-    public function setDataCriacao($dataCriacao)
+    public function setPrioridade($Prioridade)
     {
-        $this->dataCriacao = $dataCriacao;
+        $this->Prioridade = $Prioridade;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getEmissor()
+    public function __toString()
     {
-        return $this->emissor;
+        // TODO: Implement __toString() method.
+        return $this->getDataLimite();
     }
 
-    /**
-     * @param mixed $emissor
-     */
-    public function setEmissor($emissor)
-    {
-        $this->emissor = $emissor;
-    }
 
 }

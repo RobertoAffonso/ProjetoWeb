@@ -45,17 +45,29 @@ class LoadFixtures implements FixtureInterface
                     'Novo Usuário',
                     'Tornar Admin',
                     'Aprovar Ordem 66',
-                    "It's time to beat the Mind Game",
-                    'Rip and Tear',
                     'Consertar Ar Condicionado',
                     'Requisição de Equipamento',
                     'Manutenção',
-                    'Pedido de Demissão',
-                    'Pandora Directive',
+                    'Pedido de Demissão'
                 ];
 
         $key = array_rand($nomes);
 
         return $nomes[$key];
+    }
+
+    public function setores()
+    {
+        $setores = ['Almoxarifado',
+            'Finanças',
+            'Recursos Humanos',
+            'Diretoria',
+            'Logística',
+            'Administração Geral',
+            'Tecnologia da Informação'];
+
+        $key = array_rand($setores);
+
+        return $setores[$key];
     }
 }

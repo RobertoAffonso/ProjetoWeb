@@ -119,36 +119,15 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mostrarUsuariosAction',  '_route' => 'gerenciar_contas',);
         }
 
-        if (0 === strpos($pathinfo, '/M')) {
-            if (0 === strpos($pathinfo, '/Mudar')) {
-                // mudar_senha
-                if ($pathinfo === '/MudarSenha') {
-                    return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mudarSenhaAction',  '_route' => 'mudar_senha',);
-                }
-
-                // mudar_informacoes
-                if ($pathinfo === '/MudarInformacoes') {
-                    return array (  '_controller' => 'AppBundle\\Controller\\IndexController::mudarInformacoesAction',  '_route' => 'mudar_informacoes',);
-                }
-
-            }
-
-            // minha_conta
-            if ($pathinfo === '/MinhaConta') {
-                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::minhaContaAction',  '_route' => 'minha_conta',);
-            }
-
-        }
-
         if (0 === strpos($pathinfo, '/Criar')) {
             // criar_filas
             if ($pathinfo === '/CriarFilas') {
                 return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarFilasAction',  '_route' => 'criar_filas',);
             }
 
-            // criar_etapas
-            if ($pathinfo === '/CriarEtapas') {
-                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarEtapasAction',  '_route' => 'criar_etapas',);
+            // criar_setores
+            if ($pathinfo === '/CriarSetores') {
+                return array (  '_controller' => 'AppBundle\\Controller\\IndexController::criarSetoresAction',  '_route' => 'criar_setores',);
             }
 
         }
@@ -159,8 +138,32 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // meu_chamado
-        if (preg_match('#^/(?P<nomeChamado>[^/]++)$#s', $pathinfo, $matches)) {
+        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'meu_chamado')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::meuChamadoAction',));
+        }
+
+        // EditarUsuario
+        if (0 === strpos($pathinfo, '/GerenciarContas') && preg_match('#^/GerenciarContas/(?P<id>[^/]++)/Editar$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'EditarUsuario')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::EditarUsuarioAction',));
+        }
+
+        // DeletarChamadoAberto
+        if (preg_match('#^/(?P<nomeChamado>[^/]++)/?$#s', $pathinfo, $matches)) {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'DeletarChamadoAberto');
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'DeletarChamadoAberto')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::DeletarChamadoAbertoAction',));
+        }
+
+        // atender_chamado
+        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'atender_chamado')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::atenderChamado',));
+        }
+
+        // devolver_chamado
+        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'devolver_chamado')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::devolverChamado',));
         }
 
         if (0 === strpos($pathinfo, '/GerenciarContas')) {
@@ -169,9 +172,9 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'AppBundle\\Controller\\IndexController::NovoUsuarioAction',  '_route' => 'NovoUsuario',);
             }
 
-            // EditarUsuario
-            if (preg_match('#^/GerenciarContas/(?P<id>[^/]++)/Editar$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'EditarUsuario')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::EditarUsuarioAction',));
+            // DeletarUsuario
+            if (preg_match('#^/GerenciarContas/(?P<id>[^/]++)/Deletar$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'DeletarUsuario')), array (  '_controller' => 'AppBundle\\Controller\\IndexController::DeletarUsuarioAction',));
             }
 
         }

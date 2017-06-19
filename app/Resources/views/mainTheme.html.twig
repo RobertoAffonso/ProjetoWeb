@@ -92,18 +92,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </ul>
             </li>
             <li class="treeview">
-                <a href="#"><i class="fa fa-laptop"></i> <span>Conta</span>
-                    <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href={{ path('mudar_senha') }}>Mudar Senha</a></li>
-                    <li><a href={{ path('mudar_informacoes') }}>Mudar Informações</a></li>
-                    <li><a href={{ path('minha_conta') }}>Minha Conta</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
                 <a href="#"><i class="fa fa-dashboard"></i> <span>Admin</span>
                     <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
@@ -111,8 +99,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
                 <ul class="treeview-menu">
                     <li><a href={{ path('criar_filas') }}>Criar Filas</a></li>
-                    <li><a href={{ path('criar_etapas') }}>Criar Etapas</a></li>
                     <li><a href={{ path('gerenciar_contas') }}>Gerenciar Contas</a></li>
+                    <li><a href="{{ path('criar_setores') }}">Criar Setores</a></li>
                 </ul>
             </li>
         </ul>
@@ -228,7 +216,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- ./wrapper -->
 {% block javascripts %}
     <!-- REQUIRED JS SCRIPTS -->
-
     <!-- jQuery 2.2.3 -->
     <script src="{{ asset('plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
     <!-- Bootstrap 3.3.6 -->

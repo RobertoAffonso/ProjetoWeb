@@ -11,8 +11,6 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
         $this->parent = $this->loadTemplate("mainTheme.html.twig", "projetoWeb/novoUsuario.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'stylesheets' => array($this, 'block_stylesheets'),
-            'javascripts' => array($this, 'block_javascripts'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -24,107 +22,49 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c->enter($__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
+        $__internal_7d666c7173243e189eb746598e50c9ad48e21c0e11ce9b27ab4edd7e36692871 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7d666c7173243e189eb746598e50c9ad48e21c0e11ce9b27ab4edd7e36692871->enter($__internal_7d666c7173243e189eb746598e50c9ad48e21c0e11ce9b27ab4edd7e36692871_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
 
-        $__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22->enter($__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
+        $__internal_2d116af4187bc94b1808bea2cd843e2746ec2c1ee37be4015a21c678b8157e2a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2d116af4187bc94b1808bea2cd843e2746ec2c1ee37be4015a21c678b8157e2a->enter($__internal_2d116af4187bc94b1808bea2cd843e2746ec2c1ee37be4015a21c678b8157e2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "projetoWeb/novoUsuario.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c->leave($__internal_37f8b893b625f7b146c2f84d259ec94844d2c9c98a179e6d65c9ea682e5b0b1c_prof);
+        $__internal_7d666c7173243e189eb746598e50c9ad48e21c0e11ce9b27ab4edd7e36692871->leave($__internal_7d666c7173243e189eb746598e50c9ad48e21c0e11ce9b27ab4edd7e36692871_prof);
 
         
-        $__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22->leave($__internal_6bd41b065647449becca7ae5b473c0829ee69adbaa24690342b7978f7e305f22_prof);
+        $__internal_2d116af4187bc94b1808bea2cd843e2746ec2c1ee37be4015a21c678b8157e2a->leave($__internal_2d116af4187bc94b1808bea2cd843e2746ec2c1ee37be4015a21c678b8157e2a_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87->enter($__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_b7538f0e98a6418b7b30e50e30ab895250e31964ae0412717eaff6848f968b56 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b7538f0e98a6418b7b30e50e30ab895250e31964ae0412717eaff6848f968b56->enter($__internal_b7538f0e98a6418b7b30e50e30ab895250e31964ae0412717eaff6848f968b56_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e->enter($__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_5864a01122bc946f10d903d5c2b3af2f2116a1f11bcf26ae01adb3bac6f40325 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5864a01122bc946f10d903d5c2b3af2f2116a1f11bcf26ae01adb3bac6f40325->enter($__internal_5864a01122bc946f10d903d5c2b3af2f2116a1f11bcf26ae01adb3bac6f40325_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Criar Novo Usuario ";
         
-        $__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e->leave($__internal_cecf24d0509725a29d1aef399021d33be61859006117bdee076cd5a67d09984e_prof);
+        $__internal_5864a01122bc946f10d903d5c2b3af2f2116a1f11bcf26ae01adb3bac6f40325->leave($__internal_5864a01122bc946f10d903d5c2b3af2f2116a1f11bcf26ae01adb3bac6f40325_prof);
 
         
-        $__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87->leave($__internal_4837cf217b4931da2d00baa4ff0eb68dd39c19193d6f1e1969892f1e973a2c87_prof);
+        $__internal_b7538f0e98a6418b7b30e50e30ab895250e31964ae0412717eaff6848f968b56->leave($__internal_b7538f0e98a6418b7b30e50e30ab895250e31964ae0412717eaff6848f968b56_prof);
 
     }
 
     // line 5
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        $__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347->enter($__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44->enter($__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 6
-        echo "    ";
-        $this->displayParentBlock("stylesheets", $context, $blocks);
-        echo "
-
-    <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css\">
-";
-        
-        $__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44->leave($__internal_8be7de2844aba69de0638a97758d0260a76d4b5382e77342ab3fe698929cbe44_prof);
-
-        
-        $__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347->leave($__internal_54146863c7d56da8a740249673df3f3185f1ff30ad861595e834a2836eea5347_prof);
-
-    }
-
-    // line 11
-    public function block_javascripts($context, array $blocks = array())
-    {
-        $__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1->enter($__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
-
-        $__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5->enter($__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
-
-        // line 12
-        echo "    ";
-        $this->displayParentBlock("javascripts", $context, $blocks);
-        echo "
-
-    <script src=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js\"></script>
-
-    <script>jQuery(document).ready(function ()
-        {
-            \$('.js-datepicker').datepicker({
-                format: 'yyyy-MM-dd',
-                html5 => false,
-            });
-        });
-    </script>
-
-";
-        
-        $__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5->leave($__internal_d5c5d419f840207f0932689590331fa7ec173e0539ee6f73ed26ad9749fa93b5_prof);
-
-        
-        $__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1->leave($__internal_a82ae83882a9bdeb3cf2fb2230a0e312bf2de0f06d8c9b6a7c120bcba00ce5d1_prof);
-
-    }
-
-    // line 27
     public function block_body($context, array $blocks = array())
     {
-        $__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b->enter($__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7bb6632f5738f5f25bfd97057c453b87662951125526e3d1baf38174f4cf720b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7bb6632f5738f5f25bfd97057c453b87662951125526e3d1baf38174f4cf720b->enter($__internal_7bb6632f5738f5f25bfd97057c453b87662951125526e3d1baf38174f4cf720b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd->enter($__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4280f971f08c39ad1369ddb86aa051f8c8e1f52e16ad3076f8f20afb71fae035 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4280f971f08c39ad1369ddb86aa051f8c8e1f52e16ad3076f8f20afb71fae035->enter($__internal_4280f971f08c39ad1369ddb86aa051f8c8e1f52e16ad3076f8f20afb71fae035_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 28
+        // line 6
         echo "    <!-- Content Wrapper. Contains page content -->
 
         <!-- Content Header (Page header) -->
@@ -143,18 +83,33 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
                                 <div class=\"row\">
                                     <div class=\"col-lg-6\">
                                             ";
-        // line 45
+        // line 23
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'form_start');
         echo "
                                                 ";
-        // line 46
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'widget');
+        // line 24
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), "Nome", array()), 'row');
         echo "
-                                                <p>
-                                                <p>
+                                                ";
+        // line 25
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), "Email", array()), 'row');
+        echo "
+                                                ";
+        // line 26
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), "CPF", array()), 'row', array("label" => "CPF"));
+        echo "
+                                                ";
+        // line 27
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), "Senha", array()), 'row');
+        echo "
+                                                ";
+        // line 28
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), "Admin", array()), 'row');
+        echo "
+
                                                 <button type=\"submit\" class=\"btn btn-default\" formnovalidate>Criar usuario</button>
                                             ";
-        // line 50
+        // line 31
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["NovoUsuario"] ?? $this->getContext($context, "NovoUsuario")), 'form_end');
         echo "
                                     </div>
@@ -169,10 +124,10 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
         </section>
 ";
         
-        $__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd->leave($__internal_ed7c357a10f1bcb25460c0ba0e19c3095cc99f57fb1bf505edb5d9ec2e0f06fd_prof);
+        $__internal_4280f971f08c39ad1369ddb86aa051f8c8e1f52e16ad3076f8f20afb71fae035->leave($__internal_4280f971f08c39ad1369ddb86aa051f8c8e1f52e16ad3076f8f20afb71fae035_prof);
 
         
-        $__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b->leave($__internal_9c067927abe0ef0b8f54a3e87142d00ebab801fb1d0c744bf6925e15ad9a079b_prof);
+        $__internal_7bb6632f5738f5f25bfd97057c453b87662951125526e3d1baf38174f4cf720b->leave($__internal_7bb6632f5738f5f25bfd97057c453b87662951125526e3d1baf38174f4cf720b_prof);
 
     }
 
@@ -188,7 +143,7 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
     public function getDebugInfo()
     {
-        return array (  158 => 50,  151 => 46,  147 => 45,  128 => 28,  119 => 27,  94 => 12,  85 => 11,  70 => 6,  61 => 5,  43 => 3,  11 => 1,);
+        return array (  113 => 31,  107 => 28,  103 => 27,  99 => 26,  95 => 25,  91 => 24,  87 => 23,  68 => 6,  59 => 5,  41 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -204,28 +159,6 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
         return new Twig_Source("{% extends 'mainTheme.html.twig' %}
 
 {% block title %}Criar Novo Usuario {% endblock %}
-
-{% block stylesheets %}
-    {{ parent() }}
-
-    <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css\">
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-
-    <script src=\"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js\"></script>
-
-    <script>jQuery(document).ready(function ()
-        {
-            \$('.js-datepicker').datepicker({
-                format: 'yyyy-MM-dd',
-                html5 => false,
-            });
-        });
-    </script>
-
-{% endblock %}
 
 {% block body %}
     <!-- Content Wrapper. Contains page content -->
@@ -246,9 +179,12 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
                                 <div class=\"row\">
                                     <div class=\"col-lg-6\">
                                             {{ form_start(NovoUsuario) }}
-                                                {{ form_widget(NovoUsuario) }}
-                                                <p>
-                                                <p>
+                                                {{ form_row(NovoUsuario.Nome) }}
+                                                {{ form_row(NovoUsuario.Email) }}
+                                                {{ form_row(NovoUsuario.CPF, {'label': 'CPF'}) }}
+                                                {{ form_row(NovoUsuario.Senha) }}
+                                                {{ form_row(NovoUsuario.Admin) }}
+
                                                 <button type=\"submit\" class=\"btn btn-default\" formnovalidate>Criar usuario</button>
                                             {{ form_end(NovoUsuario) }}
                                     </div>
@@ -265,6 +201,6 @@ class __TwigTemplate_7a8887e59ecfdc2063f923e3cb4c68344cd3d77643bcb999bd5855b7466
 
 
 
-", "projetoWeb/novoUsuario.html.twig", "/home/uniceub/Desktop/ProjetoWeb/app/Resources/views/projetoWeb/novoUsuario.html.twig");
+", "projetoWeb/novoUsuario.html.twig", "/home/roberto/Documents/ProjetoWeb/app/Resources/views/projetoWeb/novoUsuario.html.twig");
     }
 }
