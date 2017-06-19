@@ -8,7 +8,7 @@ use Doctrine \ORM\Mapping as ORM;
 * @ORM\Table(name="etapa")
 */
 
-Class Etapa
+class Etapa
 {
   /**
   * @ORM\Id
